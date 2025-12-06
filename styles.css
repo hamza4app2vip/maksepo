@@ -1,4 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800&display=swap');
+@font-face {
+    font-family: 'AppleFont';
+    src: url('apple.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
 
 :root {
     --primary-color: #29A8A7;
@@ -15,12 +20,21 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Tajawal', sans-serif;
+    font-family: 'AppleFont', sans-serif;
+}
+
+html {
+    min-height: 100%;
+    background-color: #0f172a;
+    /* Dark fallback */
 }
 
 body {
     background: radial-gradient(circle at top right, #1a1a2e, #16213e, #0f3460);
+    background-color: #0f172a;
+    /* Fallback */
     background-attachment: fixed;
+    background-size: cover;
     color: var(--text-color);
     direction: rtl;
     overflow-x: hidden;
@@ -555,49 +569,237 @@ footer {
 }
 
 .footer-links a:hover {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at center, rgba(255, 255, 255, 0.1) 0%, transparent 70%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.mobile-menu a:hover::before {
+    transform: scaleY(1);
+}
+
+.mobile-menu a:hover::after {
+    opacity: 1;
+}
+
+.mobile-menu a:hover {
+    opacity: 1;
+    border-color: rgba(255, 255, 255, .25);
+    background: linear-gradient(135deg, rgba(255, 255, 255, .15), rgba(255, 255, 255, .05) 60%);
+    transform: translateX(-8px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .1), inset 0 1px 0 rgba(255, 255, 255, .2);
+}
+
+/* Container */
+.container {
+    padding: 0 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section {
+    padding: 120px 0 60px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Generic Section Header */
+.section-title {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--primary-color);
+    text-shadow: 0 0 20px rgba(41, 168, 167, 0.4);
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.hero-content {
+    flex: 1;
+}
+
+.hero-title {
+    font-size: 4rem;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    background: linear-gradient(to left, #fff, var(--primary-color));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero-subtitle {
+    font-size: 1.5rem;
+    color: var(--text-muted);
+    margin-bottom: 40px;
+    max-width: 600px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 35px;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+    border: none;
+}
+
+.btn-primary {
+    background: var(--primary-color);
+    color: #fff;
+    box-shadow: 0 0 20px rgba(41, 168, 167, 0.4);
+}
+
+.btn-primary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0 30px rgba(41, 168, 167, 0.6);
+}
+
+.hero-visual {
+    flex: 1;
+    position: relative;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 3D Floating Cube/Card Placeholder */
+.cube-box {
+    width: 300px;
+    height: 400px;
+    position: relative;
+    transform-style: preserve-3d;
+    transform: perspective(1000px) rotateY(-30deg) rotateX(10deg);
+    animation: float 6s ease-in-out infinite;
+}
+
+.cube-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.cube-content h3 {
+    font-size: 2rem;
+    margin-bottom: 15px;
     color: var(--primary-color);
 }
 
-/* Other Responsive Tweaks */
-@media (max-width: 900px) {
-    .section {
-        padding: 100px 0 40px;
+@keyframes float {
+
+    0%,
+    100% {
+        transform: perspective(1000px) rotateY(-30deg) rotateX(10deg) translateY(0);
     }
 
-    .hero {
-        flex-direction: column-reverse;
-        text-align: center;
-        margin-top: 60px;
-        gap: 30px;
+    50% {
+        transform: perspective(1000px) rotateY(-25deg) rotateX(5deg) translateY(-20px);
     }
+}
 
-    .hero-title {
-        font-size: 2.8rem;
-    }
+/* Cards Grid */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    padding: 20px 0;
+}
 
-    .hero-subtitle {
-        font-size: 1.1rem;
-        padding: 0 10px;
-    }
+.card {
+    padding: 30px;
+    transition: transform 0.3s;
+}
 
-    .hero-visual {
-        height: 350px;
-    }
+.card:hover {
+    transform: translateY(-10px);
+    background: rgba(255, 255, 255, 0.1);
+}
 
-    .cube-box {
-        width: 220px;
-        height: 300px;
-    }
+.card-icon {
+    font-size: 3rem;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
 
-    .container {
-        padding: 0 15px;
-    }
+/* Footer */
+footer {
+    padding: 50px 0;
+    text-align: center;
+    margin-top: 50px;
+    border-top: 1px solid var(--glass-border);
+    background: rgba(0, 0, 0, 0.2);
+}
 
-    .grid {
-        grid-template-columns: 1fr;
-    }
+.footer-links {
+    margin: 20px 0;
+}
 
-    .section.container>div {
-        flex-direction: column;
-    }
+.footer-links a {
+    color: var(--text-muted);
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: var(--primary-color);
+}
+
+.hero-subtitle {
+    font-size: 1rem;
+    padding: 0 10px;
+}
+
+.hero-visual {
+    height: 280px;
+    /* Reduce height container */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cube-box {
+    width: 180px;
+    /* Smaller width */
+    height: 240px;
+    /* Smaller height */
+}
+
+.cube-content h3 {
+    font-size: 1.5rem;
+    /* Smaller text inside card */
+}
+
+.container {
+    padding: 0 20px;
+}
+
+.grid {
+    grid-template-columns: 1fr;
+}
+
+.section.container>div {
+    flex-direction: column;
 }
