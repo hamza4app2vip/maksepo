@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مكسبو | نسيت كلمة المرور</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <nav class="navbar glass">
+        <a href="index.html" class="nav-brand"><img src="logo.png" alt="Makespo Logo"><span>مكسبو</span></a>
+        <div class="menu-toggle" id="mobile-menu"><i class="fas fa-bars"></i></div>
+        <ul class="nav-links">
+            <li><a href="index.html" class="nav-link">الرئيسية</a></li>
+            <li><a href="about.html" class="nav-link">عن مكسبو</a></li>
+            <li><a href="activities.html" class="nav-link">فعاليات مكسبو</a></li>
+            <li class="dropdown">
+                <a href="#" class="nav-link">فعاليات مميزة <i class="fas fa-chevron-down"></i></a>
+                <div class="dropdown-content glass">
+                    <a href="workshops.html" class="dropdown-item">ورش عمل</a>
+                    <a href="exhibitions.html" class="dropdown-item">معارض</a>
+                    <a href="competitions.html" class="dropdown-item">مسابقات</a>
+                </div>
+            </li>
+            <li><a href="news.html" class="nav-link">الأخبار</a></li>
+            <li><a href="contact.html" class="nav-link">تواصل معنا</a></li>
+        </ul>
+        <div class="nav-auth" style="margin-right: auto; display: none;">
+            <a href="login.html" class="btn btn-primary" style="padding: 8px 20px; font-size: 0.9rem;">تسجيل الدخول</a>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu" id="mobile-menu-overlay">
+        <div class="sheet">
+            <a href="index.html">الرئيسية</a>
+            <a href="about.html">عن مكسبو</a>
+            <a href="activities.html">فعاليات مكسبو</a>
+            <div style="padding: 10px 0; border-bottom: 1px solid rgba(255,255,255,0.1); margin-bottom: 10px;">
+                <p style="color:var(--primary-color); font-weight:bold; margin-bottom:10px; padding:0 10px;">فعاليات مميزة</p>
+                <a href="workshops.html" style="font-size:0.9rem; padding: 10px 20px;">- ورش عمل</a>
+                <a href="exhibitions.html" style="font-size:0.9rem; padding: 10px 20px;">- معارض</a>
+                <a href="competitions.html" style="font-size:0.9rem; padding: 10px 20px;">- مسابقات</a>
+            </div>
+            <a href="news.html">الأخبار</a>
+            <a href="contact.html">تواصل معنا</a>
+            <div style="border-top: 1px solid rgba(255,255,255,0.1); margin-top: 10px; padding-top: 10px;">
+                <a href="login.html" style="color: var(--primary-color);">تسجيل الدخول</a>
+                <a href="register.html">إنشاء حساب</a>
+            </div>
+        </div>
+    </div>
+
+    <section class="section container" style="display: flex; align-items: center; justify-content: center; min-height: 80vh; padding-top: 120px;">
+        <div class="glass" style="padding: 40px; width: 100%; max-width: 480px; text-align: center;">
+            <div style="margin-bottom: 25px;">
+                <div style="width: 80px; height: 80px; background: rgba(41, 168, 167, 0.2); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px;">
+                    <i class="fas fa-unlock-alt" style="font-size: 2.3rem; color: var(--primary-color);"></i>
+                </div>
+                <h2 style="color: var(--primary-color);">نسيت كلمة المرور</h2>
+                <p style="color: var(--text-muted); font-size: 0.95rem; margin-top: 10px;">أدخل بريدك الإلكتروني وسنرسل لك رمز تحقق لإعادة ضبط كلمة المرور.</p>
+            </div>
+
+            <form action="verify.html">
+                <div style="margin-bottom: 20px; text-align: right;">
+                    <label style="display: block; margin-bottom: 8px; color: #fff;">البريد الإلكتروني</label>
+                    <div style="position: relative;">
+                        <i class="fas fa-envelope" style="position: absolute; top: 18px; right: 15px; color: #aaa;"></i>
+                        <input type="email" placeholder="name@example.com" class="form-input full-width" style="padding-right: 45px; margin-bottom: 0;" required>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn btn-primary" style="width: 100%; padding: 15px;">إرسال رمز التحقق</button>
+            </form>
+
+            <div style="margin-top: 25px;">
+                <p style="color: #aaa;">تذكرت كلمة المرور؟ <a href="login.html" style="color: var(--primary-color); text-decoration: none; font-weight: bold;">العودة لتسجيل الدخول</a></p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 فريق مكسبو.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

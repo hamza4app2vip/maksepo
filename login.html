@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مكسبو | تسجيل الدخول</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <nav class="navbar glass">
+        <a href="index.html" class="nav-brand"><img src="logo.png" alt="Makespo Logo"><span>مكسبو</span></a>
+        <div class="menu-toggle" id="mobile-menu"><i class="fas fa-bars"></i></div>
+        <ul class="nav-links">
+            <li><a href="index.html" class="nav-link">الرئيسية</a></li>
+            <li><a href="about.html" class="nav-link">عن مكسبو</a></li>
+            <li><a href="activities.html" class="nav-link">أنشطة مكسبو</a></li>
+            <li class="dropdown">
+                <a href="#" class="nav-link">فعاليات المهرجان <i class="fas fa-chevron-down"></i></a>
+                <div class="dropdown-content glass">
+                    <a href="workshops.html" class="dropdown-item">ورش العمل</a>
+                    <a href="exhibitions.html" class="dropdown-item">معارض الابتكار</a>
+                    <a href="competitions.html" class="dropdown-item">مسابقات تحفيزية</a>
+                </div>
+            </li>
+            <li><a href="news.html" class="nav-link">آخر الأخبار</a></li>
+            <li><a href="contact.html" class="nav-link">تواصل معنا</a></li>
+        </ul>
+        <!-- Desktop Login/Register Buttons -->
+        <div class="nav-auth" style="margin-right: auto; display: none;">
+            <a href="login.html" class="btn btn-primary" style="padding: 8px 20px; font-size: 0.9rem;">دخول</a>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu" id="mobile-menu-overlay">
+        <div class="sheet">
+            <a href="index.html">الرئيسية</a>
+            <a href="about.html">عن مكسبو</a>
+            <a href="activities.html">أنشطة مكسبو</a>
+            <div style="padding: 10px 0; border-bottom: 1px solid rgba(255,255,255,0.1); margin-bottom: 10px;">
+                <p style="color:var(--primary-color); font-weight:bold; margin-bottom:10px; padding:0 10px;">فعاليات
+                    المهرجان</p>
+                <a href="workshops.html" style="font-size:0.9rem; padding: 10px 20px;">- ورش العمل</a>
+                <a href="exhibitions.html" style="font-size:0.9rem; padding: 10px 20px;">- معارض الابتكار</a>
+                <a href="competitions.html" style="font-size:0.9rem; padding: 10px 20px;">- مسابقات تحفيزية</a>
+            </div>
+            <a href="news.html">آخر الأخبار</a>
+            <a href="contact.html">تواصل معنا</a>
+            <div style="border-top: 1px solid rgba(255,255,255,0.1); margin-top: 10px; padding-top: 10px;">
+                <a href="login.html" style="color: var(--primary-color);">تسجيل الدخول</a>
+                <a href="register.html">إنشاء حساب جديد</a>
+            </div>
+        </div>
+    </div>
+
+    <section class="section container"
+        style="display: flex; align-items: center; justify-content: center; min-height: 80vh;">
+        <div class="glass" style="padding: 40px; width: 100%; max-width: 450px; text-align: center;">
+            <div style="margin-bottom: 30px;">
+                <img src="logo.png" alt="Logo" style="width: 80px; margin-bottom: 15px;">
+                <h2 style="color: var(--primary-color);">تسجيل الدخول</h2>
+                <p style="color: var(--text-muted); font-size: 0.9rem;">أهلاً بك مجدداً في منصة مكسبو</p>
+            </div>
+
+            <form action="verify.html"> <!-- Action points to verify for demo flow -->
+                <div style="margin-bottom: 20px; text-align: right;">
+                    <label style="display: block; margin-bottom: 8px; color: #fff;">البريد الإلكتروني</label>
+                    <div style="position: relative;">
+                        <i class="fas fa-envelope" style="position: absolute; top: 18px; right: 15px; color: #aaa;"></i>
+                        <input type="email" placeholder="name@example.com" class="form-input full-width"
+                            style="padding-right: 45px; margin-bottom: 0;">
+                    </div>
+                </div>
+
+                <div style="margin-bottom: 20px; text-align: right;">
+                    <div style="display: flex; justify-content: space-between; margin-bottom: 8px;">
+                        <label style="color: #fff;">كلمة المرور</label>
+                        <a href="forgot.html" style="color: var(--primary-color); font-size: 0.85rem; text-decoration: none;">نسيت كلمة المرور؟</a>
+                    </div>
+                    <div style="position: relative;">
+                        <i class="fas fa-lock" style="position: absolute; top: 18px; right: 15px; color: #aaa;"></i>
+                        <input type="password" placeholder="********" class="form-input full-width"
+                            style="padding-right: 45px; margin-bottom: 0;">
+                    </div>
+                </div>
+
+                <button type="submit" class="btn btn-primary" style="width: 100%; padding: 15px;">دخول</button>
+            </form>
+
+            <div style="margin-top: 25px;">
+                <p style="color: #aaa;">ليس لديك حساب؟ <a href="register.html"
+                        style="color: var(--primary-color); text-decoration: none; font-weight: bold;">إنشاء حساب
+                        جديد</a></p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 منصة مكسبو.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

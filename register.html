@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>مكسبو | الأخبار</title>
+    <title>مكسبو | إنشاء حساب</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
@@ -25,7 +25,7 @@
                     <a href="competitions.html" class="dropdown-item">مسابقات تحفيزية</a>
                 </div>
             </li>
-            <li><a href="news.html" class="nav-link active" style="color:var(--primary-color);">آخر الأخبار</a></li>
+            <li><a href="news.html" class="nav-link">آخر الأخبار</a></li>
             <li><a href="contact.html" class="nav-link">تواصل معنا</a></li>
         </ul>
     </nav>
@@ -45,33 +45,51 @@
             </div>
             <a href="news.html">آخر الأخبار</a>
             <a href="contact.html">تواصل معنا</a>
+            <div style="border-top: 1px solid rgba(255,255,255,0.1); margin-top: 10px; padding-top: 10px;">
+                <a href="login.html">تسجيل الدخول</a>
+                <a href="register.html" style="color: var(--primary-color);">إنشاء حساب جديد</a>
+            </div>
         </div>
     </div>
 
-    <section class="section container">
-        <h1 class="section-title">آخر الأخبار</h1>
-        <div class="grid">
-            <div class="card glass">
-                <div
-                    style="height: 200px; background: rgba(0,0,0,0.3); border-radius: 10px; margin-bottom: 15px; display: grid; place-items: center;">
-                    <i class="fas fa-newspaper fa-3x"></i>
-                </div>
-                <h3>انطلاق فعاليات مهرجان مكسبو الأول</h3>
-                <p style="color:#aaa; font-size:0.9rem;">1 ديسمبر 2025</p>
-                <p>وسط حضور جماهيري كبير، انطلقت اليوم فعاليات المهرجان السنوي للمبتكرين...</p>
-                <br>
-                <a href="#" style="color:var(--primary-color); text-decoration: none;">اقرأ المزيد &larr;</a>
+    <section class="section container"
+        style="display: flex; align-items: center; justify-content: center; min-height: 80vh; padding-top: 120px;">
+        <div class="glass" style="padding: 40px; width: 100%; max-width: 500px; text-align: center;">
+            <div style="margin-bottom: 30px;">
+                <h2 style="color: var(--primary-color);">إنشاء حساب جديد</h2>
+                <p style="color: var(--text-muted); font-size: 0.9rem;">انضم إلى مجتمع المبتكرين في مكسبو</p>
             </div>
-            <div class="card glass">
-                <div
-                    style="height: 200px; background: rgba(0,0,0,0.3); border-radius: 10px; margin-bottom: 15px; display: grid; place-items: center;">
-                    <i class="fas fa-handshake fa-3x"></i>
+
+            <form action="verify.html">
+                <div style="text-align: right; margin-bottom: 15px;">
+                    <label style="display: block; margin-bottom: 8px;">الاسم الكامل</label>
+                    <input type="text" placeholder="محمد أحمد" class="form-input full-width" style="margin-bottom: 0;">
                 </div>
-                <h3>توقيع اتفاقية تعاون مع شركات تقنية</h3>
-                <p style="color:#aaa; font-size:0.9rem;">28 نوفمبر 2025</p>
-                <p>بهدف دعم رواد الأعمال وتوفير فرص تدريبية متميزة للشباب اليمني...</p>
-                <br>
-                <a href="#" style="color:var(--primary-color); text-decoration: none;">اقرأ المزيد &larr;</a>
+
+                <div style="text-align: right; margin-bottom: 15px;">
+                    <label style="display: block; margin-bottom: 8px;">البريد الإلكتروني</label>
+                    <input type="email" placeholder="name@example.com" class="form-input full-width"
+                        style="margin-bottom: 0;">
+                </div>
+
+                <div style="text-align: right; margin-bottom: 15px;">
+                    <label style="display: block; margin-bottom: 8px;">رقم الهاتف</label>
+                    <input type="tel" placeholder="770000000" class="form-input full-width" style="margin-bottom: 0;">
+                </div>
+
+                <div style="text-align: right; margin-bottom: 25px;">
+                    <label style="display: block; margin-bottom: 8px;">كلمة المرور</label>
+                    <input type="password" placeholder="********" class="form-input full-width"
+                        style="margin-bottom: 0;">
+                </div>
+
+                <button type="submit" class="btn btn-primary" style="width: 100%; padding: 15px;">إنشاء الحساب</button>
+            </form>
+
+            <div style="margin-top: 25px;">
+                <p style="color: #aaa;">لديك حساب بالفعل؟ <a href="login.html"
+                        style="color: var(--primary-color); text-decoration: none; font-weight: bold;">تسجيل الدخول</a>
+                </p>
             </div>
         </div>
     </section>

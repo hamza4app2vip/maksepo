@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مكسبو | التحقق</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .otp-container {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            margin: 30px 0;
+            direction: ltr;
+            /* OTP usually entered LTR */
+        }
+
+        .otp-input {
+            width: 50px;
+            height: 60px;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            color: white;
+            font-size: 1.5rem;
+            text-align: center;
+            outline: none;
+            transition: all 0.3s ease;
+        }
+
+        .otp-input:focus {
+            border-color: var(--primary-color);
+            box-shadow: 0 0 10px rgba(41, 168, 167, 0.3);
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar glass">
+        <a href="index.html" class="nav-brand"><img src="logo.png" alt="Makespo Logo"><span>مكسبو</span></a>
+        <div class="menu-toggle" id="mobile-menu"><i class="fas fa-bars"></i></div>
+        <ul class="nav-links">
+            <li><a href="index.html" class="nav-link">الرئيسية</a></li>
+            <li><a href="about.html" class="nav-link">عن مكسبو</a></li>
+            <li><a href="activities.html" class="nav-link">أنشطة مكسبو</a></li>
+            <li><a href="#" class="nav-link">فعاليات المهرجان</a></li>
+        </ul>
+    </nav>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu" id="mobile-menu-overlay">
+        <div class="sheet">
+            <a href="index.html">الرئيسية</a>
+            <a href="about.html">عن مكسبو</a>
+            <a href="activities.html">أنشطة مكسبو</a>
+            <a href="login.html">تسجيل الدخول</a>
+        </div>
+    </div>
+
+    <section class="section container"
+        style="display: flex; align-items: center; justify-content: center; min-height: 80vh;">
+        <div class="glass" style="padding: 40px; width: 100%; max-width: 450px; text-align: center;">
+            <div style="margin-bottom: 20px;">
+                <div
+                    style="width: 80px; height: 80px; background: rgba(41, 168, 167, 0.2); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px;">
+                    <i class="fas fa-shield-alt" style="font-size: 2.5rem; color: var(--primary-color);"></i>
+                </div>
+                <h2 style="color: var(--primary-color);">تحقق من هويتك</h2>
+                <p style="color: var(--text-muted); font-size: 0.9rem; margin-top: 10px;">أدخل رمز التحقق المرسل إلى
+                    بريدك الإلكتروني</p>
+            </div>
+
+            <form action="index.html">
+                <div class="otp-container">
+                    <input type="text" class="otp-input" maxlength="1">
+                    <input type="text" class="otp-input" maxlength="1">
+                    <input type="text" class="otp-input" maxlength="1">
+                    <input type="text" class="otp-input" maxlength="1">
+                </div>
+
+                <button type="submit" class="btn btn-primary" style="width: 100%; padding: 15px;">تحقق</button>
+            </form>
+
+            <div style="margin-top: 25px;">
+                <p style="color: #aaa; font-size: 0.9rem;">لم يصلك الرمز؟ <a href="#"
+                        style="color: var(--primary-color); text-decoration: none;">إعادة الإرسال</a></p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 منصة مكسبو.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Simple script to auto-focus next input
+        const inputs = document.querySelectorAll('.otp-input');
+        inputs.forEach((input, index) => {
+            input.addEventListener('input', (e) => {
+                if (e.target.value.length === 1 && index < inputs.length - 1) {
+                    inputs[index + 1].focus();
+                }
+            });
+            input.addEventListener('keydown', (e) => {
+                if (e.key === 'Backspace' && e.target.value.length === 0 && index > 0) {
+                    inputs[index - 1].focus();
+                }
+            })
+        });
+    </script>
+</body>
+
+</html>
