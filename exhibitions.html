@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مكسبو | معارض الابتكار</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <nav class="navbar glass">
+        <a href="index.html" class="nav-brand"><img src="logo.png" alt="Makespo Logo"><span>مكسبو</span></a>
+        <div class="menu-toggle" id="mobile-menu"><i class="fas fa-bars"></i></div>
+        <ul class="nav-links">
+            <li><a href="index.html" class="nav-link">الرئيسية</a></li>
+            <li><a href="about.html" class="nav-link">عن مكسبو</a></li>
+            <li><a href="activities.html" class="nav-link">أنشطة مكسبو</a></li>
+            <li class="dropdown">
+                <a href="#" class="nav-link active" style="color:var(--primary-color);">فعاليات المهرجان <i
+                        class="fas fa-chevron-down"></i></a>
+                <div class="dropdown-content glass">
+                    <a href="workshops.html" class="dropdown-item">ورش العمل</a>
+                    <a href="exhibitions.html" class="dropdown-item">معارض الابتكار</a>
+                    <a href="competitions.html" class="dropdown-item">مسابقات تحفيزية</a>
+                </div>
+            </li>
+            <li><a href="news.html" class="nav-link">آخر الأخبار</a></li>
+            <li><a href="contact.html" class="nav-link">تواصل معنا</a></li>
+        </ul>
+    </nav>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu" id="mobile-menu-overlay">
+        <div class="sheet">
+            <a href="index.html">الرئيسية</a>
+            <a href="about.html">عن مكسبو</a>
+            <a href="activities.html">أنشطة مكسبو</a>
+            <div style="padding: 10px 0; border-bottom: 1px solid rgba(255,255,255,0.1); margin-bottom: 10px;">
+                <p style="color:var(--primary-color); font-weight:bold; margin-bottom:10px; padding:0 10px;">فعاليات
+                    المهرجان</p>
+                <a href="workshops.html" style="font-size:0.9rem; padding: 10px 20px;">- ورش العمل</a>
+                <a href="exhibitions.html" style="font-size:0.9rem; padding: 10px 20px;">- معارض الابتكار</a>
+                <a href="competitions.html" style="font-size:0.9rem; padding: 10px 20px;">- مسابقات تحفيزية</a>
+            </div>
+            <a href="news.html">آخر الأخبار</a>
+            <a href="contact.html">تواصل معنا</a>
+        </div>
+    </div>
+
+    <section class="section container">
+        <h1 class="section-title">معارض الابتكار</h1>
+        <div class="glass" style="padding: 40px; margin-bottom: 30px; text-align: center;">
+            <p style="font-size: 1.2rem;">نفتح الأبواب للمبدعين لعرض اختراعاتهم وابتكاراتهم أمام الجمهور والمستثمرين.
+            </p>
+        </div>
+
+        <div class="grid">
+            <div class="card glass">
+                <div
+                    style="height: 150px; background: rgba(255,255,255,0.1); border-radius: 10px; margin-bottom: 15px; display: flex; align-items: center; justify-content: center;">
+                    <i class="fas fa-image fa-3x" style="color: #555;"></i>
+                </div>
+                <h3>معرض صنعاء تك</h3>
+                <p>أكبر تجمع تقني يجمع أحدث الابتكارات في مجالات الطاقة المتجددة والبرمجيات.</p>
+            </div>
+            <div class="card glass">
+                <div
+                    style="height: 150px; background: rgba(255,255,255,0.1); border-radius: 10px; margin-bottom: 15px; display: flex; align-items: center; justify-content: center;">
+                    <i class="fas fa-microchip fa-3x" style="color: #555;"></i>
+                </div>
+                <h3>معرض الروبوتات والذكاء</h3>
+                <p>استعراض لمشاريع الطلاب والمهندسين في مجال الروبوتكس والأنظمة الذكية.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 منصة مكسبو.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

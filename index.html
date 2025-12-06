@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مكسبو | Makespo</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar glass">
+        <a href="index.html" class="nav-brand">
+            <img src="logo.png" alt="Makespo Logo">
+            <span>مكسبو</span>
+        </a>
+        <div class="menu-toggle" id="mobile-menu">
+            <i class="fas fa-bars"></i>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html" class="nav-link">الرئيسية</a></li>
+            <li><a href="about.html" class="nav-link">عن مكسبو</a></li>
+            <li><a href="activities.html" class="nav-link">أنشطة مكسبو</a></li>
+            <li class="dropdown">
+                <a href="#" class="nav-link">فعاليات المهرجان <i class="fas fa-chevron-down"
+                        style="font-size: 0.8rem;"></i></a>
+                <div class="dropdown-content glass">
+                    <a href="workshops.html" class="dropdown-item"><i class="fas fa-chalkboard-teacher"></i> ورش
+                        العمل</a>
+                    <a href="exhibitions.html" class="dropdown-item"><i class="fas fa-lightbulb"></i> معارض الابتكار</a>
+                    <a href="competitions.html" class="dropdown-item"><i class="fas fa-trophy"></i> مسابقات تحفيزية</a>
+                </div>
+            </li>
+            <li><a href="news.html" class="nav-link">آخر الأخبار</a></li>
+            <li><a href="contact.html" class="nav-link">تواصل معنا</a></li>
+        </ul>
+    </nav>
+
+    <!-- Mobile Menu Overlay (New Structure) -->
+    <div class="mobile-menu" id="mobile-menu-overlay">
+        <div class="sheet">
+            <a href="index.html">الرئيسية</a>
+            <a href="about.html">عن مكسبو</a>
+            <a href="activities.html">أنشطة مكسبو</a>
+
+            <!-- Mobile Dropdown Hack: Just list them or make a sub-group -->
+            <div style="padding: 10px 0; border-bottom: 1px solid rgba(255,255,255,0.1); margin-bottom: 10px;">
+                <p style="color:var(--primary-color); font-weight:bold; margin-bottom:10px; padding:0 10px;">فعاليات
+                    المهرجان</p>
+                <a href="workshops.html" style="font-size:0.9rem; padding: 10px 20px;">- ورش العمل</a>
+                <a href="exhibitions.html" style="font-size:0.9rem; padding: 10px 20px;">- معارض الابتكار</a>
+                <a href="competitions.html" style="font-size:0.9rem; padding: 10px 20px;">- مسابقات تحفيزية</a>
+            </div>
+
+            <a href="news.html">آخر الأخبار</a>
+            <a href="contact.html">تواصل معنا</a>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <header class="section hero container">
+        <div class="hero-content">
+            <h1 class="hero-title">منصة مكسبو <br> لدعم الابتكار في اليمن</h1>
+            <p class="hero-subtitle">نحن نصنع المستقبل من خلال تمكين المبتكرين وخلق بيئة إبداعية لا حدود لها. انضم إلينا
+                في رحلة التغيير.</p>
+            <a href="activities.html" class="btn btn-primary">اكتشف أنشطتنا</a>
+        </div>
+        <div class="hero-visual">
+            <div class="cube-box glass">
+                <div class="cube-content">
+                    <i class="fas fa-rocket fa-3x" style="color: var(--primary-color); margin-bottom: 20px;"></i>
+                    <h3>ابتكار بلا حدود</h3>
+                    <p style="color: #ddd;">مساحتك لتحقيق المستحيل</p>
+                </div>
+            </div>
+            <!-- Floating Elements for Realism -->
+            <div class="glass"
+                style="position: absolute; width: 100px; height: 100px; top: -20px; right: -20px; z-index: -1; animation: float 8s infinite reverse;">
+            </div>
+            <div class="glass"
+                style="position: absolute; width: 80px; height: 80px; bottom: 50px; left: -40px; z-index: 1; animation: float 10s infinite linear;">
+            </div>
+        </div>
+    </header>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <img src="logo.png" alt="Makespo Logo" style="height: 60px; margin-bottom: 20px;">
+            <p style="color: var(--text-muted); max-width: 500px; margin: 0 auto 20px;">مكسبو هي المنصة الرائدة في اليمن
+                لرعاية المبتكرين وتنظيم الفعاليات الإبداعية.</p>
+            <div class="footer-links">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <p style="font-size: 0.9rem; color: #888;">&copy; 2025 جميع الحقوق محفوظة لمنصة مكسبو.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

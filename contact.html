@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مكسبو | تواصل معنا</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <nav class="navbar glass">
+        <a href="index.html" class="nav-brand"><img src="logo.png" alt="Makespo Logo"><span>مكسبو</span></a>
+        <div class="menu-toggle" id="mobile-menu"><i class="fas fa-bars"></i></div>
+        <ul class="nav-links">
+            <li><a href="index.html" class="nav-link">الرئيسية</a></li>
+            <li><a href="about.html" class="nav-link">عن مكسبو</a></li>
+            <li><a href="activities.html" class="nav-link">أنشطة مكسبو</a></li>
+            <li class="dropdown">
+                <a href="#" class="nav-link">فعاليات المهرجان <i class="fas fa-chevron-down"></i></a>
+                <div class="dropdown-content glass">
+                    <a href="workshops.html" class="dropdown-item">ورش العمل</a>
+                    <a href="exhibitions.html" class="dropdown-item">معارض الابتكار</a>
+                    <a href="competitions.html" class="dropdown-item">مسابقات تحفيزية</a>
+                </div>
+            </li>
+            <li><a href="news.html" class="nav-link">آخر الأخبار</a></li>
+            <li><a href="contact.html" class="nav-link active" style="color:var(--primary-color);">تواصل معنا</a></li>
+        </ul>
+    </nav>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu" id="mobile-menu-overlay">
+        <div class="sheet">
+            <a href="index.html">الرئيسية</a>
+            <a href="about.html">عن مكسبو</a>
+            <a href="activities.html">أنشطة مكسبو</a>
+            <div style="padding: 10px 0; border-bottom: 1px solid rgba(255,255,255,0.1); margin-bottom: 10px;">
+                <p style="color:var(--primary-color); font-weight:bold; margin-bottom:10px; padding:0 10px;">فعاليات
+                    المهرجان</p>
+                <a href="workshops.html" style="font-size:0.9rem; padding: 10px 20px;">- ورش العمل</a>
+                <a href="exhibitions.html" style="font-size:0.9rem; padding: 10px 20px;">- معارض الابتكار</a>
+                <a href="competitions.html" style="font-size:0.9rem; padding: 10px 20px;">- مسابقات تحفيزية</a>
+            </div>
+            <a href="news.html">آخر الأخبار</a>
+            <a href="contact.html">تواصل معنا</a>
+        </div>
+    </div>
+
+    <section class="section container">
+        <h1 class="section-title">تواصل معنا</h1>
+
+        <div style="display: flex; gap: 40px; flex-wrap: wrap;">
+            <div class="glass" style="flex: 1; min-width: 300px; padding: 30px;">
+                <h3 style="margin-bottom: 20px; color: var(--primary-color);">معلومات التواصل</h3>
+                <div style="margin-bottom: 15px; display: flex; align-items: center; gap: 10px;">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>اليمن - صنعاء - حدة</span>
+                </div>
+                <div style="margin-bottom: 15px; display: flex; align-items: center; gap: 10px;">
+                    <i class="fas fa-phone"></i>
+                    <span>+967 770 000 000</span>
+                </div>
+                <div style="margin-bottom: 15px; display: flex; align-items: center; gap: 10px;">
+                    <i class="fas fa-envelope"></i>
+                    <span>info@makespo.com</span>
+                </div>
+
+                <div style="margin-top: 30px; display: flex; gap: 15px;">
+                    <a href="#" class="social-icon" style="color: #fff; font-size: 1.5rem;"><i
+                            class="fab fa-facebook"></i></a>
+                    <a href="#" class="social-icon" style="color: #fff; font-size: 1.5rem;"><i
+                            class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icon" style="color: #fff; font-size: 1.5rem;"><i
+                            class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icon" style="color: #fff; font-size: 1.5rem;"><i
+                            class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+
+            <div class="glass" style="flex: 2; min-width: 300px; padding: 30px;">
+                <form>
+                    <div style="display: flex; gap: 20px; margin-bottom: 20px;">
+                        <input type="text" placeholder="الاسم الكامل"
+                            style="flex: 1; padding: 15px; border-radius: 10px; border: 1px solid rgba(255,255,255,0.1); background: rgba(255,255,255,0.05); color: #fff; outline: none;">
+                        <input type="email" placeholder="البريد الإلكتروني"
+                            style="flex: 1; padding: 15px; border-radius: 10px; border: 1px solid rgba(255,255,255,0.1); background: rgba(255,255,255,0.05); color: #fff; outline: none;">
+                    </div>
+                    <input type="text" placeholder="موضوع الرسالة"
+                        style="width: 100%; padding: 15px; border-radius: 10px; border: 1px solid rgba(255,255,255,0.1); background: rgba(255,255,255,0.05); color: #fff; outline: none; margin-bottom: 20px;">
+                    <textarea placeholder="نص الرسالة" rows="5"
+                        style="width: 100%; padding: 15px; border-radius: 10px; border: 1px solid rgba(255,255,255,0.1); background: rgba(255,255,255,0.05); color: #fff; outline: none; margin-bottom: 20px;"></textarea>
+                    <button type="button" class="btn btn-primary" style="width: 100%;">إرسال الرسالة</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 منصة مكسبو.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
