@@ -11,13 +11,22 @@
 
 <body>
     <nav class="navbar glass">
+        <!-- Mobile Controls (Menu + Theme Toggle) - Left Side on Mobile -->
+        <div class="mobile-controls">
+            <div class="menu-toggle" id="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+            <button class="theme-toggle" id="theme-toggle" aria-label="تبديل الوضع">
+                <span class="stars"></span>
+                <span class="moon-craters"></span>
+            </button>
+        </div>
+
         <a href="index.html" class="nav-brand">
             <img src="logo.png" alt="Makespo Logo">
             <span>مكسبو</span>
         </a>
-        <div class="menu-toggle" id="mobile-menu">
-            <i class="fas fa-bars"></i>
-        </div>
+
         <ul class="nav-links">
             <li><a href="index.html" class="nav-link active" style="color:var(--primary-color);">الرئيسية</a></li>
             <li><a href="about.html" class="nav-link">عن مكسبو</a></li>
@@ -34,14 +43,15 @@
             <li><a href="news.html" class="nav-link">آخر الأخبار</a></li>
             <li><a href="contact.html" class="nav-link">تواصل معنا</a></li>
         </ul>
+
         <div class="nav-auth">
             <a href="login.html" class="btn btn-ghost">تسجيل الدخول</a>
             <a href="register.html" class="btn btn-primary">إنشاء حساب</a>
+            <button class="theme-toggle" id="theme-toggle-desktop" aria-label="تبديل الوضع">
+                <span class="stars"></span>
+                <span class="moon-craters"></span>
+            </button>
         </div>
-        <button class="theme-toggle" id="theme-toggle" aria-label="تبديل الوضع">
-            <i class="fas fa-moon"></i>
-            <i class="fas fa-sun"></i>
-        </button>
     </nav>
 
     <!-- Mobile Menu Overlay -->

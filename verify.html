@@ -14,16 +14,15 @@
             justify-content: center;
             margin: 30px 0;
             direction: ltr;
-            /* OTP usually entered LTR */
         }
 
         .otp-input {
             width: 50px;
             height: 60px;
-            background: rgba(255, 255, 255, 0.05);
-            border: 1px solid rgba(255, 255, 255, 0.1);
+            background: var(--input-bg);
+            border: 1px solid var(--glass-border);
             border-radius: 10px;
-            color: white;
+            color: var(--text-color);
             font-size: 1.5rem;
             text-align: center;
             outline: none;
@@ -40,18 +39,47 @@
 
 <body>
     <nav class="navbar glass">
-        <a href="index.html" class="nav-brand"><img src="logo.png" alt="Makespo Logo"><span>مكسبو</span></a>
-        <div class="menu-toggle" id="mobile-menu"><i class="fas fa-bars"></i></div>
+        <!-- Mobile Controls -->
+        <div class="mobile-controls">
+            <div class="menu-toggle" id="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+            <button class="theme-toggle" id="theme-toggle" aria-label="تبديل الوضع">
+                <span class="stars"></span>
+                <span class="moon-craters"></span>
+            </button>
+        </div>
+
+        <a href="index.html" class="nav-brand">
+            <img src="logo.png" alt="Makespo Logo">
+            <span>مكسبو</span>
+        </a>
+
         <ul class="nav-links">
             <li><a href="index.html" class="nav-link">الرئيسية</a></li>
             <li><a href="about.html" class="nav-link">عن مكسبو</a></li>
             <li><a href="activities.html" class="nav-link">أنشطة مكسبو</a></li>
-            <li><a href="#" class="nav-link">فعاليات المهرجان</a></li>
+            <li><a href="workshops.html" class="nav-link">ورش العمل</a></li>
+            <li class="dropdown">
+                <a href="#" class="nav-link">فعاليات المهرجان <i class="fas fa-chevron-down"
+                        style="font-size: 0.8rem;"></i></a>
+                <div class="dropdown-content glass">
+                    <a href="exhibitions.html" class="dropdown-item"><i class="fas fa-lightbulb"></i> معارض الابتكار</a>
+                    <a href="competitions.html" class="dropdown-item"><i class="fas fa-trophy"></i> مسابقات تحفيزية</a>
+                </div>
+            </li>
+            <li><a href="news.html" class="nav-link">آخر الأخبار</a></li>
+            <li><a href="contact.html" class="nav-link">تواصل معنا</a></li>
         </ul>
-        <button class="theme-toggle" id="theme-toggle" aria-label="تبديل الوضع">
-            <i class="fas fa-moon"></i>
-            <i class="fas fa-sun"></i>
-        </button>
+
+        <div class="nav-auth">
+            <a href="login.html" class="btn btn-ghost">تسجيل الدخول</a>
+            <a href="register.html" class="btn btn-primary">إنشاء حساب</a>
+            <button class="theme-toggle" id="theme-toggle-desktop" aria-label="تبديل الوضع">
+                <span class="stars"></span>
+                <span class="moon-craters"></span>
+            </button>
+        </div>
     </nav>
 
     <!-- Mobile Menu Overlay -->
@@ -60,7 +88,15 @@
             <a href="index.html">الرئيسية</a>
             <a href="about.html">عن مكسبو</a>
             <a href="activities.html">أنشطة مكسبو</a>
-            <a href="login.html">تسجيل الدخول</a>
+            <a href="workshops.html">ورش العمل</a>
+            <a href="exhibitions.html">معارض الابتكار</a>
+            <a href="competitions.html">مسابقات تحفيزية</a>
+            <a href="news.html">آخر الأخبار</a>
+            <a href="contact.html">تواصل معنا</a>
+            <div class="mobile-auth">
+                <a href="login.html" class="btn btn-ghost">تسجيل الدخول</a>
+                <a href="register.html" class="btn btn-primary">إنشاء حساب</a>
+            </div>
         </div>
     </div>
 
@@ -89,7 +125,7 @@
             </form>
 
             <div style="margin-top: 25px;">
-                <p style="color: #aaa; font-size: 0.9rem;">لم يصلك الرمز؟ <a href="#"
+                <p style="color: var(--text-muted); font-size: 0.9rem;">لم يصلك الرمز؟ <a href="#"
                         style="color: var(--primary-color); text-decoration: none;">إعادة الإرسال</a></p>
             </div>
         </div>

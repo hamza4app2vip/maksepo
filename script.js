@@ -2,28 +2,43 @@
 const mobileMenuBtn = document.getElementById('mobile-menu');
 const mobileMenuOverlay = document.getElementById('mobile-menu-overlay');
 
-mobileMenuBtn.addEventListener('click', () => {
-    mobileMenuOverlay.classList.toggle('open');
-    // Change icon from hamburger to close
-    const icon = mobileMenuBtn.querySelector('i');
-    if (mobileMenuOverlay.classList.contains('open')) {
-        icon.classList.remove('fa-bars');
-        icon.classList.add('fa-times');
-    } else {
-        icon.classList.remove('fa-times');
-        icon.classList.add('fa-bars');
-    }
-});
-
-// Close menu when clicking outside (on backdrop)
-mobileMenuOverlay.addEventListener('click', (e) => {
-    if (e.target === mobileMenuOverlay) {
-        mobileMenuOverlay.classList.remove('open');
+if (mobileMenuBtn && mobileMenuOverlay) {
+    mobileMenuBtn.addEventListener('click', () => {
+        mobileMenuOverlay.classList.toggle('open');
+        document.body.classList.toggle('menu-open');
+        // Change icon from hamburger to close
         const icon = mobileMenuBtn.querySelector('i');
-        icon.classList.remove('fa-times');
-        icon.classList.add('fa-bars');
-    }
-});
+        if (mobileMenuOverlay.classList.contains('open')) {
+            icon.classList.remove('fa-bars');
+            icon.classList.add('fa-times');
+        } else {
+            icon.classList.remove('fa-times');
+            icon.classList.add('fa-bars');
+        }
+    });
+
+    // Close menu when clicking outside (on backdrop)
+    mobileMenuOverlay.addEventListener('click', (e) => {
+        if (e.target === mobileMenuOverlay) {
+            mobileMenuOverlay.classList.remove('open');
+            document.body.classList.remove('menu-open');
+            const icon = mobileMenuBtn.querySelector('i');
+            icon.classList.remove('fa-times');
+            icon.classList.add('fa-bars');
+        }
+    });
+
+    // Close menu when clicking any link inside
+    mobileMenuOverlay.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+            mobileMenuOverlay.classList.remove('open');
+            document.body.classList.remove('menu-open');
+            const icon = mobileMenuBtn.querySelector('i');
+            icon.classList.remove('fa-times');
+            icon.classList.add('fa-bars');
+        });
+    });
+}
 
 // Smooth Scroll for Anchors
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -51,6 +66,7 @@ cards.forEach(card => {
 
 // Theme Toggle (Light/Dark Mode)
 const themeToggle = document.getElementById('theme-toggle');
+const themeToggleDesktop = document.getElementById('theme-toggle-desktop');
 
 // Check for saved theme preference or default to light
 const savedTheme = localStorage.getItem('theme');
@@ -58,24 +74,34 @@ if (savedTheme === 'dark') {
     document.body.setAttribute('data-theme', 'dark');
 }
 
-// Toggle theme on button click
-if (themeToggle) {
-    themeToggle.addEventListener('click', () => {
-        const currentTheme = document.body.getAttribute('data-theme');
+// Theme toggle function
+function toggleTheme() {
+    const currentTheme = document.body.getAttribute('data-theme');
 
-        if (currentTheme === 'dark') {
-            document.body.removeAttribute('data-theme');
-            localStorage.setItem('theme', 'light');
-        } else {
-            document.body.setAttribute('data-theme', 'dark');
-            localStorage.setItem('theme', 'dark');
-        }
-    });
+    // Add animation class for smooth transition
+    document.body.style.transition = 'background 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55), color 0.3s ease';
+
+    if (currentTheme === 'dark') {
+        document.body.removeAttribute('data-theme');
+        localStorage.setItem('theme', 'light');
+    } else {
+        document.body.setAttribute('data-theme', 'dark');
+        localStorage.setItem('theme', 'dark');
+    }
+}
+
+// Add click listeners to both toggles
+if (themeToggle) {
+    themeToggle.addEventListener('click', toggleTheme);
+}
+
+if (themeToggleDesktop) {
+    themeToggleDesktop.addEventListener('click', toggleTheme);
 }
 
 // ===== COUNTDOWN TIMER =====
-// Set the festival date - adjust this to your actual event date
-const festivalDate = new Date('2025-03-15T10:00:00').getTime();
+// Set the festival date - 80 days from now (February 25, 2026)
+const festivalDate = new Date('2026-02-25T10:00:00').getTime();
 
 function updateCountdown() {
     const daysEl = document.getElementById('days');

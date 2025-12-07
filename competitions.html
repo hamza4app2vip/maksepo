@@ -11,28 +11,47 @@
 
 <body>
     <nav class="navbar glass">
-        <a href="index.html" class="nav-brand"><img src="logo.png" alt="Makespo Logo"><span>مكسبو</span></a>
-        <div class="menu-toggle" id="mobile-menu"><i class="fas fa-bars"></i></div>
+        <!-- Mobile Controls -->
+        <div class="mobile-controls">
+            <div class="menu-toggle" id="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+            <button class="theme-toggle" id="theme-toggle" aria-label="تبديل الوضع">
+                <span class="stars"></span>
+                <span class="moon-craters"></span>
+            </button>
+        </div>
+
+        <a href="index.html" class="nav-brand">
+            <img src="logo.png" alt="Makespo Logo">
+            <span>مكسبو</span>
+        </a>
+
         <ul class="nav-links">
             <li><a href="index.html" class="nav-link">الرئيسية</a></li>
             <li><a href="about.html" class="nav-link">عن مكسبو</a></li>
             <li><a href="activities.html" class="nav-link">أنشطة مكسبو</a></li>
+            <li><a href="workshops.html" class="nav-link">ورش العمل</a></li>
             <li class="dropdown">
                 <a href="#" class="nav-link active" style="color:var(--primary-color);">فعاليات المهرجان <i
-                        class="fas fa-chevron-down"></i></a>
+                        class="fas fa-chevron-down" style="font-size: 0.8rem;"></i></a>
                 <div class="dropdown-content glass">
-                    <a href="workshops.html" class="dropdown-item">ورش العمل</a>
-                    <a href="exhibitions.html" class="dropdown-item">معارض الابتكار</a>
-                    <a href="competitions.html" class="dropdown-item">مسابقات تحفيزية</a>
+                    <a href="exhibitions.html" class="dropdown-item"><i class="fas fa-lightbulb"></i> معارض الابتكار</a>
+                    <a href="competitions.html" class="dropdown-item"><i class="fas fa-trophy"></i> مسابقات تحفيزية</a>
                 </div>
             </li>
             <li><a href="news.html" class="nav-link">آخر الأخبار</a></li>
             <li><a href="contact.html" class="nav-link">تواصل معنا</a></li>
         </ul>
-        <button class="theme-toggle" id="theme-toggle" aria-label="تبديل الوضع">
-            <i class="fas fa-moon"></i>
-            <i class="fas fa-sun"></i>
-        </button>
+
+        <div class="nav-auth">
+            <a href="login.html" class="btn btn-ghost">تسجيل الدخول</a>
+            <a href="register.html" class="btn btn-primary">إنشاء حساب</a>
+            <button class="theme-toggle" id="theme-toggle-desktop" aria-label="تبديل الوضع">
+                <span class="stars"></span>
+                <span class="moon-craters"></span>
+            </button>
+        </div>
     </nav>
 
     <!-- Mobile Menu Overlay -->
@@ -41,15 +60,15 @@
             <a href="index.html">الرئيسية</a>
             <a href="about.html">عن مكسبو</a>
             <a href="activities.html">أنشطة مكسبو</a>
-            <div style="padding: 10px 0; border-bottom: 1px solid rgba(255,255,255,0.1); margin-bottom: 10px;">
-                <p style="color:var(--primary-color); font-weight:bold; margin-bottom:10px; padding:0 10px;">فعاليات
-                    المهرجان</p>
-                <a href="workshops.html" style="font-size:0.9rem; padding: 10px 20px;">- ورش العمل</a>
-                <a href="exhibitions.html" style="font-size:0.9rem; padding: 10px 20px;">- معارض الابتكار</a>
-                <a href="competitions.html" style="font-size:0.9rem; padding: 10px 20px;">- مسابقات تحفيزية</a>
-            </div>
+            <a href="workshops.html">ورش العمل</a>
+            <a href="exhibitions.html">معارض الابتكار</a>
+            <a href="competitions.html">مسابقات تحفيزية</a>
             <a href="news.html">آخر الأخبار</a>
             <a href="contact.html">تواصل معنا</a>
+            <div class="mobile-auth">
+                <a href="login.html" class="btn btn-ghost">تسجيل الدخول</a>
+                <a href="register.html" class="btn btn-primary">إنشاء حساب</a>
+            </div>
         </div>
     </div>
 
