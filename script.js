@@ -103,6 +103,9 @@ if (themeToggleDesktop) {
 // Set the festival date - 80 days from now (February 25, 2026)
 const festivalDate = new Date('2026-02-25T10:00:00').getTime();
 
+// Store previous values to detect changes
+let prevValues = { days: '', hours: '', minutes: '', seconds: '' };
+
 function updateCountdown() {
     const daysEl = document.getElementById('days');
     const hoursEl = document.getElementById('hours');
@@ -116,22 +119,31 @@ function updateCountdown() {
     const distance = festivalDate - now;
 
     if (distance > 0) {
-        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-        const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        const days = String(Math.floor(distance / (1000 * 60 * 60 * 24))).padStart(2, '0');
+        const hours = String(Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))).padStart(2, '0');
+        const minutes = String(Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60))).padStart(2, '0');
+        const seconds = String(Math.floor((distance % (1000 * 60)) / 1000)).padStart(2, '0');
 
-        // Pad with leading zeros
-        daysEl.textContent = String(days).padStart(2, '0');
-        hoursEl.textContent = String(hours).padStart(2, '0');
-        minutesEl.textContent = String(minutes).padStart(2, '0');
-        secondsEl.textContent = String(seconds).padStart(2, '0');
+        // Update with flip animation
+        updateWithFlip(secondsEl, seconds, 'seconds');
+        if (prevValues.minutes !== minutes) updateWithFlip(minutesEl, minutes, 'minutes');
+        if (prevValues.hours !== hours) updateWithFlip(hoursEl, hours, 'hours');
+        if (prevValues.days !== days) updateWithFlip(daysEl, days, 'days');
+
+        prevValues = { days, hours, minutes, seconds };
     } else {
-        // Event has passed
         daysEl.textContent = '00';
         hoursEl.textContent = '00';
         minutesEl.textContent = '00';
         secondsEl.textContent = '00';
+    }
+}
+
+function updateWithFlip(element, newValue, key) {
+    if (prevValues[key] !== newValue) {
+        element.textContent = newValue;
+        element.classList.add('flip');
+        setTimeout(() => element.classList.remove('flip'), 600);
     }
 }
 

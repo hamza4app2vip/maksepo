@@ -60,6 +60,7 @@ body[data-theme="dark"] {
 html {
     min-height: 100%;
     background-color: var(--body-color);
+    overscroll-behavior: none;
 }
 
 body {
@@ -72,6 +73,7 @@ body {
     overflow-x: hidden;
     min-height: 100vh;
     transition: background 0.5s ease, color 0.3s ease;
+    overscroll-behavior: none;
 }
 
 /* Background Abstract Shapes for Glass Effect */
@@ -97,10 +99,10 @@ body::before {
 body::after {
     width: 400px;
     height: 400px;
-    background: #6a00ff;
+    background: var(--primary-color);
     bottom: -50px;
     left: -50px;
-    opacity: 0.3;
+    opacity: 0.25;
     animation: moveShape2 20s infinite alternate;
 }
 
@@ -154,15 +156,46 @@ body::after {
     top: 20px;
     left: 50%;
     transform: translateX(-50%);
-    /* Centered nicely */
     width: 90%;
     max-width: 1200px;
-    padding: 10px 30px;
+    padding: 14px 32px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 1000;
-    transition: all 0.3s ease;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    /* Ultra Realistic Glass Effect */
+    background: linear-gradient(135deg,
+            rgba(255, 255, 255, 0.9) 0%,
+            rgba(255, 255, 255, 0.7) 50%,
+            rgba(255, 255, 255, 0.85) 100%);
+    backdrop-filter: blur(24px) saturate(200%);
+    -webkit-backdrop-filter: blur(24px) saturate(200%);
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    border-top: 1px solid rgba(255, 255, 255, 0.8);
+    border-left: 1px solid rgba(255, 255, 255, 0.7);
+    box-shadow:
+        0 8px 32px rgba(0, 0, 0, 0.08),
+        0 2px 8px rgba(0, 0, 0, 0.04),
+        inset 0 1px 0 rgba(255, 255, 255, 0.9),
+        inset 0 -1px 0 rgba(0, 0, 0, 0.03);
+    border-radius: 24px;
+}
+
+/* Dark mode navbar - Premium Glass */
+[data-theme="dark"] .navbar {
+    background: linear-gradient(135deg,
+            rgba(15, 23, 42, 0.85) 0%,
+            rgba(30, 41, 59, 0.75) 50%,
+            rgba(15, 23, 42, 0.8) 100%);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+    border-left: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow:
+        0 8px 32px rgba(0, 0, 0, 0.4),
+        0 2px 8px rgba(0, 0, 0, 0.2),
+        inset 0 1px 0 rgba(255, 255, 255, 0.1),
+        inset 0 -1px 0 rgba(0, 0, 0, 0.2);
 }
 
 .nav-brand {
@@ -1370,6 +1403,29 @@ footer {
     color: var(--primary-color);
     line-height: 1;
     text-shadow: 0 0 20px var(--heading-glow);
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+/* Countdown flip animation class - added via JS */
+.countdown-value.flip {
+    animation: flipDown 0.6s ease;
+}
+
+@keyframes flipDown {
+    0% {
+        transform: perspective(400px) rotateX(-90deg);
+        opacity: 0;
+    }
+
+    50% {
+        transform: perspective(400px) rotateX(-20deg);
+    }
+
+    100% {
+        transform: perspective(400px) rotateX(0deg);
+        opacity: 1;
+    }
 }
 
 .countdown-label {
@@ -1793,4 +1849,27 @@ body[data-theme="dark"] .form-textarea {
 
 body[data-theme="dark"] .navbar {
     background: rgba(15, 23, 42, 0.8);
+}
+
+/* Auth Pages (Login, Register, Forgot, Verify) - Mobile Fix */
+.auth-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding-top: 120px;
+    padding-bottom: 40px;
+}
+
+@media (max-width: 768px) {
+    .auth-section {
+        padding-top: 140px;
+        padding-bottom: 30px;
+        min-height: auto;
+    }
+
+    .auth-section .glass {
+        margin: 0 15px;
+        padding: 30px 25px !important;
+    }
 }
