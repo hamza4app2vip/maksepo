@@ -6,14 +6,48 @@
 }
 
 :root {
+    --primary-color: #1fa59e;
+    --primary-dark: #158079;
+    --text-color: #0f172a;
+    --text-muted: #475569;
+    --text-strong: #0b1220;
+    --body-color: #eef2f7;
+    --body-gradient: radial-gradient(circle at top right, #ffffff, #e8f3ff, #e0f7f4);
+    --glass-bg: rgba(255, 255, 255, 0.78);
+    --glass-border: rgba(15, 23, 42, 0.08);
+    --glass-shadow: 0 25px 60px rgba(15, 23, 42, 0.12);
+    --nav-blur-bg: rgba(255, 255, 255, 0.85);
+    --footer-bg: rgba(255, 255, 255, 0.85);
+    --overlay-bg: rgba(15, 23, 42, 0.32);
+    --card-hover: rgba(15, 23, 42, 0.06);
+    --scrollbar-track: #d7dee9;
+    --scrollbar-thumb: #94a3b8;
+    --input-bg: rgba(255, 255, 255, 0.95);
+    --input-border: rgba(15, 23, 42, 0.12);
+    --heading-glow: rgba(31, 165, 158, 0.32);
+    --transition-speed: 0.3s;
+}
+
+body[data-theme="dark"] {
     --primary-color: #29A8A7;
     --primary-dark: #1f8584;
     --text-color: #ffffff;
     --text-muted: #e0e0e0;
+    --text-strong: #ffffff;
+    --body-color: #0f172a;
+    --body-gradient: radial-gradient(circle at top right, #1a1a2e, #16213e, #0f3460);
     --glass-bg: rgba(255, 255, 255, 0.05);
     --glass-border: rgba(255, 255, 255, 0.1);
     --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
-    --transition-speed: 0.3s;
+    --nav-blur-bg: rgba(15, 23, 42, 0.8);
+    --footer-bg: rgba(0, 0, 0, 0.2);
+    --overlay-bg: rgba(0, 0, 0, .4);
+    --card-hover: rgba(255, 255, 255, 0.1);
+    --scrollbar-track: #0f172a;
+    --scrollbar-thumb: var(--primary-color);
+    --input-bg: rgba(255, 255, 255, 0.05);
+    --input-border: rgba(255, 255, 255, 0.1);
+    --heading-glow: rgba(41, 168, 167, 0.4);
 }
 
 * {
@@ -25,20 +59,19 @@
 
 html {
     min-height: 100%;
-    background-color: #0f172a;
-    /* Dark fallback */
+    background-color: var(--body-color);
 }
 
 body {
-    background: radial-gradient(circle at top right, #1a1a2e, #16213e, #0f3460);
-    background-color: #0f172a;
-    /* Fallback */
+    background: var(--body-gradient);
+    background-color: var(--body-color);
     background-attachment: fixed;
     background-size: cover;
     color: var(--text-color);
     direction: rtl;
     overflow-x: hidden;
     min-height: 100vh;
+    transition: background 0.5s ease, color 0.3s ease;
 }
 
 /* Background Abstract Shapes for Glass Effect */
@@ -97,11 +130,11 @@ body::after {
 }
 
 ::-webkit-scrollbar-track {
-    background: #0f172a;
+    background: var(--scrollbar-track);
 }
 
 ::-webkit-scrollbar-thumb {
-    background: var(--primary-color);
+    background: var(--scrollbar-thumb);
     border-radius: 5px;
 }
 
@@ -254,6 +287,45 @@ body::after {
     gap: 10px;
 }
 
+/* Theme Toggle Button */
+.theme-toggle {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    border: 1px solid var(--glass-border);
+    background: var(--glass-bg);
+    color: var(--text-color);
+    font-size: 1.2rem;
+    cursor: pointer;
+    display: grid;
+    place-items: center;
+    transition: all 0.3s ease;
+    margin-left: 10px;
+}
+
+.theme-toggle:hover {
+    background: var(--primary-color);
+    color: white;
+    transform: rotate(15deg) scale(1.1);
+    box-shadow: 0 0 20px rgba(31, 165, 158, 0.4);
+}
+
+.theme-toggle .fa-sun {
+    display: none;
+}
+
+.theme-toggle .fa-moon {
+    display: block;
+}
+
+body[data-theme="dark"] .theme-toggle .fa-sun {
+    display: block;
+}
+
+body[data-theme="dark"] .theme-toggle .fa-moon {
+    display: none;
+}
+
 /* Mobile Menu Toggle (Hidden on Desktop) */
 .menu-toggle {
     display: none;
@@ -290,7 +362,7 @@ body::after {
     }
 
     .nav-auth {
-        display: none;
+        display: none !important;
     }
 
     .mobile-auth {
@@ -966,12 +1038,162 @@ footer {
     margin: 20px 0;
 }
 
+
 .footer-links a {
     color: var(--text-muted);
     margin: 0 15px;
     text-decoration: none;
     font-size: 1.1rem;
     transition: color 0.3s;
+}
+
+/* ===== COUNTDOWN SECTION STYLES ===== */
+.countdown-section {
+    padding: 60px 0;
+}
+
+.countdown-wrapper {
+    text-align: center;
+    padding: 50px 40px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.countdown-header {
+    margin-bottom: 40px;
+}
+
+.countdown-icon {
+    font-size: 3rem;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+    display: block;
+}
+
+.countdown-title {
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.countdown-subtitle {
+    font-size: 1.1rem;
+    color: var(--text-muted);
+}
+
+.countdown-timer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-bottom: 35px;
+}
+
+.countdown-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(145deg, var(--glass-bg), transparent);
+    border: 1px solid var(--glass-border);
+    border-radius: 20px;
+    padding: 25px 30px;
+    min-width: 100px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.countdown-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(31, 165, 158, 0.2);
+}
+
+.countdown-value {
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: var(--primary-color);
+    line-height: 1;
+    text-shadow: 0 0 20px var(--heading-glow);
+}
+
+.countdown-label {
+    font-size: 1rem;
+    color: var(--text-muted);
+    margin-top: 10px;
+    font-weight: 500;
+}
+
+.countdown-separator {
+    font-size: 3rem;
+    font-weight: bold;
+    color: var(--primary-color);
+    opacity: 0.5;
+}
+
+.countdown-cta {
+    margin-top: 10px;
+}
+
+.countdown-cta .btn {
+    padding: 15px 40px;
+    font-size: 1.2rem;
+}
+
+/* Countdown Mobile Responsive */
+@media (max-width: 768px) {
+    .countdown-wrapper {
+        padding: 30px 20px;
+    }
+
+    .countdown-title {
+        font-size: 1.5rem;
+    }
+
+    .countdown-subtitle {
+        font-size: 0.95rem;
+    }
+
+    .countdown-timer {
+        gap: 10px;
+    }
+
+    .countdown-item {
+        min-width: 70px;
+        padding: 15px 20px;
+        border-radius: 15px;
+    }
+
+    .countdown-value {
+        font-size: 2rem;
+    }
+
+    .countdown-label {
+        font-size: 0.8rem;
+    }
+
+    .countdown-separator {
+        font-size: 1.5rem;
+    }
+
+    .countdown-icon {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .countdown-item {
+        min-width: 60px;
+        padding: 12px 15px;
+    }
+
+    .countdown-value {
+        font-size: 1.6rem;
+    }
+
+    .countdown-separator {
+        font-size: 1.2rem;
+        margin: 0 2px;
+    }
 }
 
 /* Contact Page Styles */
@@ -1061,10 +1283,19 @@ footer {
     }
 
     .hero {
-        flex-direction: column-reverse;
+        flex-direction: column;
         text-align: center;
         margin-top: 0;
         gap: 30px;
+    }
+
+    .hero-content {
+        order: 1;
+    }
+
+    .hero-visual {
+        order: 2;
+        margin-top: 20px;
     }
 
     .hero-title {
@@ -1122,4 +1353,127 @@ footer {
         flex-direction: column;
         gap: 15px;
     }
+}
+
+/* ===== LIGHT MODE SPECIFIC STYLES ===== */
+/* Hero title gradient for light mode */
+:root .hero-title {
+    background: linear-gradient(to left, #0f172a, var(--primary-color));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+body[data-theme="dark"] .hero-title {
+    background: linear-gradient(to left, #fff, var(--primary-color));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Section title for light mode */
+:root .section-title {
+    color: var(--primary-color);
+    text-shadow: 0 0 20px var(--heading-glow);
+}
+
+/* Card text for light mode */
+:root .card h2,
+:root .card h3 {
+    color: var(--text-strong);
+}
+
+:root .card p {
+    color: var(--text-muted);
+}
+
+body[data-theme="dark"] .card h2,
+body[data-theme="dark"] .card h3 {
+    color: var(--primary-color);
+}
+
+body[data-theme="dark"] .card p {
+    color: #ddd;
+}
+
+/* Card icon for light mode */
+:root .card-icon {
+    color: var(--primary-color);
+}
+
+/* Cube content text */
+:root .cube-content h3 {
+    color: var(--primary-color);
+}
+
+:root .cube-content p {
+    color: var(--text-muted);
+}
+
+body[data-theme="dark"] .cube-content p {
+    color: #ddd;
+}
+
+/* Footer text for light mode */
+:root footer {
+    background: var(--footer-bg);
+    border-top: 1px solid var(--glass-border);
+}
+
+:root footer p {
+    color: var(--text-muted);
+}
+
+body[data-theme="dark"] footer p {
+    color: #888;
+}
+
+/* Form labels for light mode */
+:root .form-input,
+:root .form-textarea {
+    background: var(--input-bg);
+    border: 1px solid var(--input-border);
+    color: var(--text-color);
+}
+
+:root .form-input::placeholder,
+:root .form-textarea::placeholder {
+    color: var(--text-muted);
+}
+
+body[data-theme="dark"] .form-input,
+body[data-theme="dark"] .form-textarea {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: #fff;
+}
+
+/* Mobile menu for light mode */
+:root .mobile-menu {
+    background: var(--overlay-bg);
+}
+
+:root .mobile-menu .sheet {
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+}
+
+:root .mobile-menu a {
+    color: var(--text-color);
+    background: rgba(15, 23, 42, 0.03);
+    border: 1px solid var(--glass-border);
+}
+
+:root .mobile-menu a:hover {
+    background: rgba(31, 165, 158, 0.1);
+    color: var(--primary-color);
+}
+
+/* Navbar for light mode */
+:root .navbar {
+    background: var(--nav-blur-bg);
+}
+
+body[data-theme="dark"] .navbar {
+    background: rgba(15, 23, 42, 0.8);
 }

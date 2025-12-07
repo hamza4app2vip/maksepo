@@ -4,14 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>مكسبو | Makespo</title>
+    <title>مكسبو | منصة الابتكار في اليمن</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
 <body>
-
-    <!-- Navigation -->
     <nav class="navbar glass">
         <a href="index.html" class="nav-brand">
             <img src="logo.png" alt="Makespo Logo">
@@ -21,15 +19,14 @@
             <i class="fas fa-bars"></i>
         </div>
         <ul class="nav-links">
-            <li><a href="index.html" class="nav-link">الرئيسية</a></li>
+            <li><a href="index.html" class="nav-link active" style="color:var(--primary-color);">الرئيسية</a></li>
             <li><a href="about.html" class="nav-link">عن مكسبو</a></li>
             <li><a href="activities.html" class="nav-link">أنشطة مكسبو</a></li>
+            <li><a href="workshops.html" class="nav-link">ورش العمل</a></li>
             <li class="dropdown">
                 <a href="#" class="nav-link">فعاليات المهرجان <i class="fas fa-chevron-down"
                         style="font-size: 0.8rem;"></i></a>
                 <div class="dropdown-content glass">
-                    <a href="workshops.html" class="dropdown-item"><i class="fas fa-chalkboard-teacher"></i> ورش
-                        العمل</a>
                     <a href="exhibitions.html" class="dropdown-item"><i class="fas fa-lightbulb"></i> معارض الابتكار</a>
                     <a href="competitions.html" class="dropdown-item"><i class="fas fa-trophy"></i> مسابقات تحفيزية</a>
                 </div>
@@ -41,24 +38,25 @@
             <a href="login.html" class="btn btn-ghost">تسجيل الدخول</a>
             <a href="register.html" class="btn btn-primary">إنشاء حساب</a>
         </div>
+        <button class="theme-toggle" id="theme-toggle" aria-label="تبديل الوضع">
+            <i class="fas fa-moon"></i>
+            <i class="fas fa-sun"></i>
+        </button>
     </nav>
 
-    <!-- Mobile Menu Overlay (New Structure) -->
+    <!-- Mobile Menu Overlay -->
     <div class="mobile-menu" id="mobile-menu-overlay">
         <div class="sheet">
             <a href="index.html">الرئيسية</a>
             <a href="about.html">عن مكسبو</a>
             <a href="activities.html">أنشطة مكسبو</a>
-
-            <!-- Mobile Dropdown Hack: Just list them or make a sub-group -->
+            <a href="workshops.html">ورش العمل</a>
             <div style="padding: 10px 0; border-bottom: 1px solid rgba(255,255,255,0.1); margin-bottom: 10px;">
                 <p style="color:var(--primary-color); font-weight:bold; margin-bottom:10px; padding:0 10px;">فعاليات
                     المهرجان</p>
-                <a href="workshops.html" style="font-size:0.9rem; padding: 10px 20px;">- ورش العمل</a>
                 <a href="exhibitions.html" style="font-size:0.9rem; padding: 10px 20px;">- معارض الابتكار</a>
                 <a href="competitions.html" style="font-size:0.9rem; padding: 10px 20px;">- مسابقات تحفيزية</a>
             </div>
-
             <a href="news.html">آخر الأخبار</a>
             <a href="contact.html">تواصل معنا</a>
             <div class="mobile-auth">
@@ -81,18 +79,56 @@
                 <div class="cube-content">
                     <i class="fas fa-rocket fa-3x" style="color: var(--primary-color); margin-bottom: 20px;"></i>
                     <h3>ابتكار بلا حدود</h3>
-                    <p style="color: #ddd;">مساحتك لتحقيق المستحيل</p>
+                    <p style="color: var(--text-muted);">مساحتك لتحقيق المستحيل</p>
                 </div>
             </div>
-            <!-- Floating Elements for Realism -->
-            <div class="glass"
+            <!-- Floating Elements -->
+            <div class="glass floating-element"
                 style="position: absolute; width: 100px; height: 100px; top: -20px; right: -20px; z-index: -1; animation: float 8s infinite reverse;">
             </div>
-            <div class="glass"
-                style="position: absolute; width: 80px; height: 80px; bottom: 50px; left: -40px; z-index: 1; animation: float 10s infinite linear;">
+            <div class="glass floating-element"
+                style="position: absolute; width: 80px; height: 80px; bottom: 50px; left: -40px; z-index: -1; animation: float 10s infinite linear;">
             </div>
         </div>
     </header>
+
+    <!-- Countdown Section -->
+    <section class="countdown-section">
+        <div class="container">
+            <div class="countdown-wrapper glass">
+                <div class="countdown-header">
+                    <i class="fas fa-calendar-alt countdown-icon"></i>
+                    <h2 class="countdown-title">الوقت المتبقي للمهرجان</h2>
+                    <p class="countdown-subtitle">استعد للحدث الأكبر للابتكار والإبداع في اليمن</p>
+                </div>
+                <div class="countdown-timer" id="countdown">
+                    <div class="countdown-item">
+                        <span class="countdown-value" id="days">00</span>
+                        <span class="countdown-label">يوم</span>
+                    </div>
+                    <div class="countdown-separator">:</div>
+                    <div class="countdown-item">
+                        <span class="countdown-value" id="hours">00</span>
+                        <span class="countdown-label">ساعة</span>
+                    </div>
+                    <div class="countdown-separator">:</div>
+                    <div class="countdown-item">
+                        <span class="countdown-value" id="minutes">00</span>
+                        <span class="countdown-label">دقيقة</span>
+                    </div>
+                    <div class="countdown-separator">:</div>
+                    <div class="countdown-item">
+                        <span class="countdown-value" id="seconds">00</span>
+                        <span class="countdown-label">ثانية</span>
+                    </div>
+                </div>
+                <div class="countdown-cta">
+                    <a href="register.html" class="btn btn-primary"><i class="fas fa-user-plus"
+                            style="margin-left: 8px;"></i>سجل الآن</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Footer -->
     <footer>
@@ -106,7 +142,7 @@
                 <a href="#"><i class="fab fa-instagram"></i></a>
                 <a href="#"><i class="fab fa-linkedin-in"></i></a>
             </div>
-            <p style="font-size: 0.9rem; color: #888;">&copy; 2025 جميع الحقوق محفوظة لمنصة مكسبو.</p>
+            <p style="font-size: 0.9rem; color: var(--text-muted);">2025 | جميع الحقوق محفوظة لفريق مكسبو التقني</p>
         </div>
     </footer>
 
