@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مكسبو | البرامج</title>
+    <meta name="description"
+        content="اكتشف برامج مكسبو لتطوير الأفكار والمشاريع الريادية - برامج ريادة الأعمال، تطوير النماذج الأولية، التسويق والتمويل، وبناء القدرات">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <nav class="navbar glass">
+        <!-- Mobile Controls -->
+        <div class="mobile-controls">
+            <button class="theme-toggle" id="theme-toggle" aria-label="تبديل الوضع">
+                <span class="stars"></span>
+                <span class="moon-craters"></span>
+            </button>
+            <div class="menu-toggle" id="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+
+        <a href="index.html" class="nav-brand">
+            <img src="logo.png" alt="Makespo Logo">
+            <span>مكسبو</span>
+        </a>
+
+        <ul class="nav-links">
+            <li><a href="index.html" class="nav-link">الرئيسية</a></li>
+            <li><a href="about.html" class="nav-link">عن مكسبو</a></li>
+            <li><a href="programs.html" class="nav-link active" style="color:var(--primary-color);">البرامج</a></li>
+            <li><a href="activities.html" class="nav-link">الأنشطة</a></li>
+            <li><a href="challenges.html" class="nav-link">التحديات</a></li>
+            <li><a href="exhibitions.html" class="nav-link">معارض الابتكار</a></li>
+            <li class="dropdown">
+                <a href="#" class="nav-link">المزيد <i class="fas fa-chevron-down" style="font-size: 0.8rem;"></i></a>
+                <div class="dropdown-content glass">
+                    <a href="market.html" class="dropdown-item"><i class="fas fa-store"></i> سوق الابتكار</a>
+                    <a href="opportunities.html" class="dropdown-item"><i class="fas fa-door-open"></i> الفرص</a>
+                    <a href="community.html" class="dropdown-item"><i class="fas fa-users"></i> المجتمع</a>
+                    <a href="content.html" class="dropdown-item"><i class="fas fa-newspaper"></i> المحتوى</a>
+                    <a href="partners.html" class="dropdown-item"><i class="fas fa-handshake"></i> الشركاء</a>
+                </div>
+            </li>
+            <li><a href="contact.html" class="nav-link">تواصل معنا</a></li>
+        </ul>
+
+        <div class="nav-auth">
+            <a href="login.html" class="btn btn-ghost">تسجيل الدخول</a>
+            <a href="register.html" class="btn btn-primary">إنشاء حساب</a>
+            <button class="theme-toggle" id="theme-toggle-desktop" aria-label="تبديل الوضع">
+                <span class="stars"></span>
+                <span class="moon-craters"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu" id="mobile-menu-overlay">
+        <div class="sheet">
+            <a href="index.html">الرئيسية</a>
+            <a href="about.html">عن مكسبو</a>
+            <a href="programs.html">البرامج</a>
+            <a href="activities.html">الأنشطة</a>
+            <a href="challenges.html">التحديات</a>
+            <a href="exhibitions.html">معارض الابتكار</a>
+            <a href="market.html">سوق الابتكار</a>
+            <a href="opportunities.html">الفرص</a>
+            <a href="community.html">المجتمع</a>
+            <a href="content.html">المحتوى</a>
+            <a href="partners.html">الشركاء</a>
+            <a href="contact.html">تواصل معنا</a>
+            <div class="mobile-auth">
+                <a href="login.html" class="btn btn-ghost">تسجيل الدخول</a>
+                <a href="register.html" class="btn btn-primary">إنشاء حساب</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="section container">
+        <div class="glass" style="padding: 60px 40px; text-align: center; margin-bottom: 50px;">
+            <h1 class="section-title" style="margin-bottom: 20px;">
+                <i class="fas fa-graduation-cap" style="margin-left: 15px; color: var(--primary-color);"></i>
+                برامج مكسبو
+            </h1>
+            <p style="font-size: 1.2rem; color: var(--text-muted); max-width: 700px; margin: 0 auto;">
+                نقدم لك مجموعة متكاملة من البرامج المصممة لتطوير أفكارك وتحويلها إلى مشاريع ناجحة.
+                انضم إلى برامجنا واستفد من خبرات المتخصصين والموارد المتاحة.
+            </p>
+        </div>
+
+        <!-- Programs Grid -->
+        <div class="grid">
+            <!-- برامج ريادة الأعمال -->
+            <div class="card glass">
+                <div class="card-icon"><i class="fas fa-rocket"></i></div>
+                <h2>برامج ريادة الأعمال</h2>
+                <p>برامج متخصصة لاحتضان الأفكار الريادية وتحويلها إلى مشاريع قابلة للتنفيذ. نوفر الإرشاد والدعم الفني
+                    والتقني اللازم.</p>
+                <div style="margin-top: 20px;">
+                    <span
+                        style="background: rgba(31, 165, 158, 0.15); padding: 5px 15px; border-radius: 20px; font-size: 0.9rem; color: var(--primary-color);">
+                        <i class="fas fa-users" style="margin-left: 5px;"></i> رواد الأعمال الناشئين
+                    </span>
+                </div>
+            </div>
+
+            <!-- برامج تطوير النماذج الأولية -->
+            <div class="card glass">
+                <div class="card-icon"><i class="fas fa-cogs"></i></div>
+                <h2>تطوير النماذج الأولية</h2>
+                <p>دعم فني ومادي لبناء النماذج الأولية للمشاريع المبتكرة. نوفر المختبرات والأدوات والخبرات اللازمة
+                    لتحويل الفكرة إلى نموذج عملي.</p>
+                <div style="margin-top: 20px;">
+                    <span
+                        style="background: rgba(31, 165, 158, 0.15); padding: 5px 15px; border-radius: 20px; font-size: 0.9rem; color: var(--primary-color);">
+                        <i class="fas fa-flask" style="margin-left: 5px;"></i> المبتكرون والمخترعون
+                    </span>
+                </div>
+            </div>
+
+            <!-- برامج التسويق والتمويل -->
+            <div class="card glass">
+                <div class="card-icon"><i class="fas fa-chart-line"></i></div>
+                <h2>برامج التسويق والتمويل</h2>
+                <p>ربط المشاريع الواعدة بالمستثمرين والممولين. نساعدك في بناء خطة عمل متكاملة وعرض مشروعك بشكل احترافي
+                    للحصول على التمويل.</p>
+                <div style="margin-top: 20px;">
+                    <span
+                        style="background: rgba(31, 165, 158, 0.15); padding: 5px 15px; border-radius: 20px; font-size: 0.9rem; color: var(--primary-color);">
+                        <i class="fas fa-building" style="margin-left: 5px;"></i> الشركات الناشئة
+                    </span>
+                </div>
+            </div>
+
+            <!-- برامج بناء القدرات -->
+            <div class="card glass">
+                <div class="card-icon"><i class="fas fa-user-graduate"></i></div>
+                <h2>برامج بناء القدرات</h2>
+                <p>دورات تدريبية وورش عمل متخصصة لتطوير المهارات الريادية والتقنية. تعلم من الخبراء واكتسب المهارات
+                    اللازمة للنجاح.</p>
+                <div style="margin-top: 20px;">
+                    <span
+                        style="background: rgba(31, 165, 158, 0.15); padding: 5px 15px; border-radius: 20px; font-size: 0.9rem; color: var(--primary-color);">
+                        <i class="fas fa-lightbulb" style="margin-left: 5px;"></i> جميع المهتمين
+                    </span>
+                </div>
+            </div>
+
+            <!-- برنامج الإرشاد -->
+            <div class="card glass">
+                <div class="card-icon"><i class="fas fa-hands-helping"></i></div>
+                <h2>برنامج الإرشاد والتوجيه</h2>
+                <p>ربط المبتكرين ورواد الأعمال بمرشدين وخبراء متخصصين يقدمون الدعم والتوجيه المستمر طوال رحلة المشروع.
+                </p>
+                <div style="margin-top: 20px;">
+                    <span
+                        style="background: rgba(31, 165, 158, 0.15); padding: 5px 15px; border-radius: 20px; font-size: 0.9rem; color: var(--primary-color);">
+                        <i class="fas fa-star" style="margin-left: 5px;"></i> أصحاب المشاريع
+                    </span>
+                </div>
+            </div>
+
+            <!-- برنامج التسريع -->
+            <div class="card glass">
+                <div class="card-icon"><i class="fas fa-bolt"></i></div>
+                <h2>برنامج تسريع الأعمال</h2>
+                <p>برنامج مكثف لتسريع نمو الشركات الناشئة الواعدة. يشمل التدريب المكثف والإرشاد وفرص التمويل والتواصل مع
+                    المستثمرين.</p>
+                <div style="margin-top: 20px;">
+                    <span
+                        style="background: rgba(31, 165, 158, 0.15); padding: 5px 15px; border-radius: 20px; font-size: 0.9rem; color: var(--primary-color);">
+                        <i class="fas fa-trophy" style="margin-left: 5px;"></i> الشركات الناشئة
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <!-- CTA Section -->
+        <div class="glass" style="padding: 50px 40px; text-align: center; margin-top: 60px;">
+            <h2 style="color: var(--primary-color); margin-bottom: 15px;">
+                <i class="fas fa-paper-plane" style="margin-left: 10px;"></i>
+                هل لديك فكرة تحتاج للدعم؟
+            </h2>
+            <p
+                style="color: var(--text-muted); margin-bottom: 25px; max-width: 500px; margin-left: auto; margin-right: auto;">
+                تواصل معنا اليوم واكتشف البرنامج المناسب لفكرتك ومشروعك
+            </p>
+            <div style="display: flex; gap: 15px; justify-content: center; flex-wrap: wrap;">
+                <a href="register.html" class="btn btn-primary">
+                    <i class="fas fa-user-plus" style="margin-left: 8px;"></i>سجّل الآن
+                </a>
+                <a href="contact.html" class="btn btn-ghost">
+                    <i class="fas fa-envelope" style="margin-left: 8px;"></i>تواصل معنا
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <img src="logo.png" alt="Makespo Logo" style="height: 60px; margin-bottom: 20px;">
+            <p style="color: var(--text-muted); max-width: 500px; margin: 0 auto 20px;">مكسبو هي المنصة الرائدة في اليمن
+                لرعاية المبتكرين وتنظيم الفعاليات الإبداعية.</p>
+            <div class="footer-links">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <p style="font-size: 0.9rem; color: var(--text-muted);">2025 | جميع الحقوق محفوظة لفريق مكسبو التقني</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

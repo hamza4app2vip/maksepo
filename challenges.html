@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مكسبو | التحديات</title>
+    <meta name="description" content="منصة التحديات من مكسبو - شارك في حل التحديات الواقعية وقدم حلولك المبتكرة">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <nav class="navbar glass">
+        <!-- Mobile Controls -->
+        <div class="mobile-controls">
+            <button class="theme-toggle" id="theme-toggle" aria-label="تبديل الوضع">
+                <span class="stars"></span>
+                <span class="moon-craters"></span>
+            </button>
+            <div class="menu-toggle" id="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+
+        <a href="index.html" class="nav-brand">
+            <img src="logo.png" alt="Makespo Logo">
+            <span>مكسبو</span>
+        </a>
+
+        <ul class="nav-links">
+            <li><a href="index.html" class="nav-link">الرئيسية</a></li>
+            <li><a href="about.html" class="nav-link">عن مكسبو</a></li>
+            <li><a href="programs.html" class="nav-link">البرامج</a></li>
+            <li><a href="activities.html" class="nav-link">الأنشطة</a></li>
+            <li><a href="challenges.html" class="nav-link active" style="color:var(--primary-color);">التحديات</a></li>
+            <li><a href="exhibitions.html" class="nav-link">معارض الابتكار</a></li>
+            <li class="dropdown">
+                <a href="#" class="nav-link">المزيد <i class="fas fa-chevron-down" style="font-size: 0.8rem;"></i></a>
+                <div class="dropdown-content glass">
+                    <a href="market.html" class="dropdown-item"><i class="fas fa-store"></i> سوق الابتكار</a>
+                    <a href="opportunities.html" class="dropdown-item"><i class="fas fa-door-open"></i> الفرص</a>
+                    <a href="community.html" class="dropdown-item"><i class="fas fa-users"></i> المجتمع</a>
+                    <a href="content.html" class="dropdown-item"><i class="fas fa-newspaper"></i> المحتوى</a>
+                    <a href="partners.html" class="dropdown-item"><i class="fas fa-handshake"></i> الشركاء</a>
+                </div>
+            </li>
+            <li><a href="contact.html" class="nav-link">تواصل معنا</a></li>
+        </ul>
+
+        <div class="nav-auth">
+            <a href="login.html" class="btn btn-ghost">تسجيل الدخول</a>
+            <a href="register.html" class="btn btn-primary">إنشاء حساب</a>
+            <button class="theme-toggle" id="theme-toggle-desktop" aria-label="تبديل الوضع">
+                <span class="stars"></span>
+                <span class="moon-craters"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu" id="mobile-menu-overlay">
+        <div class="sheet">
+            <a href="index.html">الرئيسية</a>
+            <a href="about.html">عن مكسبو</a>
+            <a href="programs.html">البرامج</a>
+            <a href="activities.html">الأنشطة</a>
+            <a href="challenges.html">التحديات</a>
+            <a href="exhibitions.html">معارض الابتكار</a>
+            <a href="market.html">سوق الابتكار</a>
+            <a href="opportunities.html">الفرص</a>
+            <a href="community.html">المجتمع</a>
+            <a href="content.html">المحتوى</a>
+            <a href="partners.html">الشركاء</a>
+            <a href="contact.html">تواصل معنا</a>
+            <div class="mobile-auth">
+                <a href="login.html" class="btn btn-ghost">تسجيل الدخول</a>
+                <a href="register.html" class="btn btn-primary">إنشاء حساب</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="section container">
+        <div class="glass" style="padding: 60px 40px; text-align: center; margin-bottom: 50px;">
+            <h1 class="section-title" style="margin-bottom: 20px;">
+                <i class="fas fa-puzzle-piece" style="margin-left: 15px; color: var(--primary-color);"></i>
+                منصة التحديات
+            </h1>
+            <p style="font-size: 1.2rem; color: var(--text-muted); max-width: 700px; margin: 0 auto;">
+                نطرح تحديات واقعية من القطاعين العام والخاص ونبحث عن حلول مبتكرة من مجتمع المبتكرين.
+                شارك بحلولك واحصل على فرصة التنفيذ والدعم.
+            </p>
+        </div>
+
+        <!-- How It Works -->
+        <div style="margin-bottom: 60px;">
+            <h2 class="section-title" style="font-size: 1.8rem; margin-bottom: 30px;">
+                <i class="fas fa-list-ol" style="margin-left: 10px;"></i>
+                كيف تعمل المنصة؟
+            </h2>
+            <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));">
+                <div class="card glass" style="text-align: center;">
+                    <div
+                        style="width: 60px; height: 60px; background: var(--primary-color); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 15px; color: white; font-size: 1.5rem; font-weight: bold;">
+                        1</div>
+                    <h3>اكتشف التحدي</h3>
+                    <p style="font-size: 0.95rem;">تصفح التحديات المطروحة واختر ما يناسب خبرتك</p>
+                </div>
+                <div class="card glass" style="text-align: center;">
+                    <div
+                        style="width: 60px; height: 60px; background: var(--primary-color); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 15px; color: white; font-size: 1.5rem; font-weight: bold;">
+                        2</div>
+                    <h3>قدم حلك</h3>
+                    <p style="font-size: 0.95rem;">اعمل على حل مبتكر وقم بتقديمه عبر المنصة</p>
+                </div>
+                <div class="card glass" style="text-align: center;">
+                    <div
+                        style="width: 60px; height: 60px; background: var(--primary-color); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 15px; color: white; font-size: 1.5rem; font-weight: bold;">
+                        3</div>
+                    <h3>التقييم</h3>
+                    <p style="font-size: 0.95rem;">تقوم لجنة متخصصة بتقييم الحلول المقدمة</p>
+                </div>
+                <div class="card glass" style="text-align: center;">
+                    <div
+                        style="width: 60px; height: 60px; background: var(--primary-color); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 15px; color: white; font-size: 1.5rem; font-weight: bold;">
+                        4</div>
+                    <h3>الفوز والتنفيذ</h3>
+                    <p style="font-size: 0.95rem;">احصل على الدعم لتنفيذ حلك الفائز</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Active Challenges -->
+        <h2 class="section-title" style="font-size: 1.8rem; margin-bottom: 30px;">
+            <i class="fas fa-fire" style="margin-left: 10px; color: #ff6b6b;"></i>
+            التحديات المفتوحة
+        </h2>
+        <div class="grid">
+            <div class="card glass">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;">
+                    <span
+                        style="background: #28a745; color: white; padding: 5px 15px; border-radius: 20px; font-size: 0.85rem;">
+                        <i class="fas fa-clock" style="margin-left: 5px;"></i> مفتوح
+                    </span>
+                    <span style="color: var(--text-muted); font-size: 0.9rem;">ينتهي: 15 فبراير 2025</span>
+                </div>
+                <div class="card-icon"><i class="fas fa-tint"></i></div>
+                <h2>تحدي إدارة المياه</h2>
+                <p>نبحث عن حلول مبتكرة لتحسين إدارة موارد المياه في المناطق الريفية وتقليل الهدر.</p>
+                <div style="margin-top: 15px; padding-top: 15px; border-top: 1px solid var(--glass-border);">
+                    <span style="color: var(--primary-color); font-weight: bold;">الجائزة: 500,000 ريال</span>
+                </div>
+            </div>
+
+            <div class="card glass">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;">
+                    <span
+                        style="background: #28a745; color: white; padding: 5px 15px; border-radius: 20px; font-size: 0.85rem;">
+                        <i class="fas fa-clock" style="margin-left: 5px;"></i> مفتوح
+                    </span>
+                    <span style="color: var(--text-muted); font-size: 0.9rem;">ينتهي: 28 فبراير 2025</span>
+                </div>
+                <div class="card-icon"><i class="fas fa-graduation-cap"></i></div>
+                <h2>تحدي التعليم الرقمي</h2>
+                <p>كيف يمكننا توفير تعليم رقمي عالي الجودة للطلاب في المناطق ذات الاتصال المحدود بالإنترنت؟</p>
+                <div style="margin-top: 15px; padding-top: 15px; border-top: 1px solid var(--glass-border);">
+                    <span style="color: var(--primary-color); font-weight: bold;">الجائزة: 750,000 ريال</span>
+                </div>
+            </div>
+
+            <div class="card glass">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;">
+                    <span
+                        style="background: #28a745; color: white; padding: 5px 15px; border-radius: 20px; font-size: 0.85rem;">
+                        <i class="fas fa-clock" style="margin-left: 5px;"></i> مفتوح
+                    </span>
+                    <span style="color: var(--text-muted); font-size: 0.9rem;">ينتهي: 10 مارس 2025</span>
+                </div>
+                <div class="card-icon"><i class="fas fa-solar-panel"></i></div>
+                <h2>تحدي الطاقة المتجددة</h2>
+                <p>نبحث عن حلول مبتكرة لتوفير الطاقة النظيفة والمستدامة للمجتمعات المحلية بتكلفة معقولة.</p>
+                <div style="margin-top: 15px; padding-top: 15px; border-top: 1px solid var(--glass-border);">
+                    <span style="color: var(--primary-color); font-weight: bold;">الجائزة: 1,000,000 ريال</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Past Challenges -->
+        <div style="margin-top: 60px;">
+            <h2 class="section-title" style="font-size: 1.8rem; margin-bottom: 30px;">
+                <i class="fas fa-trophy" style="margin-left: 10px; color: gold;"></i>
+                التحديات السابقة
+            </h2>
+            <div class="grid">
+                <div class="card glass" style="opacity: 0.85;">
+                    <div
+                        style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;">
+                        <span
+                            style="background: #6c757d; color: white; padding: 5px 15px; border-radius: 20px; font-size: 0.85rem;">
+                            <i class="fas fa-check" style="margin-left: 5px;"></i> مكتمل
+                        </span>
+                    </div>
+                    <div class="card-icon"><i class="fas fa-heartbeat"></i></div>
+                    <h2>تحدي الصحة الرقمية</h2>
+                    <p>تم اختيار 3 حلول فائزة لتحسين الوصول للخدمات الصحية عن بُعد.</p>
+                    <div style="margin-top: 15px; padding-top: 15px; border-top: 1px solid var(--glass-border);">
+                        <span style="color: var(--text-muted);">الفائز: فريق الابتكار الصحي</span>
+                    </div>
+                </div>
+
+                <div class="card glass" style="opacity: 0.85;">
+                    <div
+                        style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;">
+                        <span
+                            style="background: #6c757d; color: white; padding: 5px 15px; border-radius: 20px; font-size: 0.85rem;">
+                            <i class="fas fa-check" style="margin-left: 5px;"></i> مكتمل
+                        </span>
+                    </div>
+                    <div class="card-icon"><i class="fas fa-seedling"></i></div>
+                    <h2>تحدي الزراعة الذكية</h2>
+                    <p>حلول مبتكرة لتحسين الإنتاجية الزراعية باستخدام التقنيات الحديثة.</p>
+                    <div style="margin-top: 15px; padding-top: 15px; border-top: 1px solid var(--glass-border);">
+                        <span style="color: var(--text-muted);">الفائز: مشروع الأرض الخضراء</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- CTA Section -->
+        <div class="glass" style="padding: 50px 40px; text-align: center; margin-top: 60px;">
+            <h2 style="color: var(--primary-color); margin-bottom: 15px;">
+                <i class="fas fa-lightbulb" style="margin-left: 10px;"></i>
+                لديك تحدي تريد طرحه؟
+            </h2>
+            <p
+                style="color: var(--text-muted); margin-bottom: 25px; max-width: 500px; margin-left: auto; margin-right: auto;">
+                إذا كانت مؤسستك تواجه تحدياً يحتاج لحلول مبتكرة، تواصل معنا لطرحه على منصة التحديات
+            </p>
+            <a href="contact.html" class="btn btn-primary">
+                <i class="fas fa-envelope" style="margin-left: 8px;"></i>تواصل معنا
+            </a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <img src="logo.png" alt="Makespo Logo" style="height: 60px; margin-bottom: 20px;">
+            <p style="color: var(--text-muted); max-width: 500px; margin: 0 auto 20px;">مكسبو هي المنصة الرائدة في اليمن
+                لرعاية المبتكرين وتنظيم الفعاليات الإبداعية.</p>
+            <div class="footer-links">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <p style="font-size: 0.9rem; color: var(--text-muted);">2025 | جميع الحقوق محفوظة لفريق مكسبو التقني</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

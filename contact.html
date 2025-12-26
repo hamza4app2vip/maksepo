@@ -5,65 +5,63 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>مكسبو | تواصل معنا</title>
+    <meta name="description" content="تواصل مع فريق مكسبو - نحن هنا لمساعدتك والإجابة على استفساراتك">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
 <body>
     <nav class="navbar glass">
-        <!-- Mobile Controls -->
         <div class="mobile-controls">
             <button class="theme-toggle" id="theme-toggle" aria-label="تبديل الوضع">
-                <span class="stars"></span>
-                <span class="moon-craters"></span>
+                <span class="stars"></span><span class="moon-craters"></span>
             </button>
-            <div class="menu-toggle" id="mobile-menu">
-                <i class="fas fa-bars"></i>
-            </div>
+            <div class="menu-toggle" id="mobile-menu"><i class="fas fa-bars"></i></div>
         </div>
-
         <a href="index.html" class="nav-brand">
-            <img src="logo.png" alt="Makespo Logo">
-            <span>مكسبو</span>
+            <img src="logo.png" alt="Makespo Logo"><span>مكسبو</span>
         </a>
-
         <ul class="nav-links">
             <li><a href="index.html" class="nav-link">الرئيسية</a></li>
             <li><a href="about.html" class="nav-link">عن مكسبو</a></li>
-            <li><a href="activities.html" class="nav-link">أنشطة مكسبو</a></li>
-            <li><a href="workshops.html" class="nav-link">ورش العمل</a></li>
+            <li><a href="programs.html" class="nav-link">البرامج</a></li>
+            <li><a href="activities.html" class="nav-link">الأنشطة</a></li>
+            <li><a href="challenges.html" class="nav-link">التحديات</a></li>
+            <li><a href="exhibitions.html" class="nav-link">معارض الابتكار</a></li>
             <li class="dropdown">
-                <a href="#" class="nav-link">فعاليات المهرجان <i class="fas fa-chevron-down"
-                        style="font-size: 0.8rem;"></i></a>
+                <a href="#" class="nav-link">المزيد <i class="fas fa-chevron-down" style="font-size: 0.8rem;"></i></a>
                 <div class="dropdown-content glass">
-                    <a href="exhibitions.html" class="dropdown-item"><i class="fas fa-lightbulb"></i> معارض الابتكار</a>
-                    <a href="competitions.html" class="dropdown-item"><i class="fas fa-trophy"></i> مسابقات تحفيزية</a>
+                    <a href="market.html" class="dropdown-item"><i class="fas fa-store"></i> سوق الابتكار</a>
+                    <a href="opportunities.html" class="dropdown-item"><i class="fas fa-door-open"></i> الفرص</a>
+                    <a href="community.html" class="dropdown-item"><i class="fas fa-users"></i> المجتمع</a>
+                    <a href="content.html" class="dropdown-item"><i class="fas fa-newspaper"></i> المحتوى</a>
+                    <a href="partners.html" class="dropdown-item"><i class="fas fa-handshake"></i> الشركاء</a>
                 </div>
             </li>
-            <li><a href="news.html" class="nav-link">آخر الأخبار</a></li>
             <li><a href="contact.html" class="nav-link active" style="color:var(--primary-color);">تواصل معنا</a></li>
         </ul>
-
         <div class="nav-auth">
             <a href="login.html" class="btn btn-ghost">تسجيل الدخول</a>
             <a href="register.html" class="btn btn-primary">إنشاء حساب</a>
             <button class="theme-toggle" id="theme-toggle-desktop" aria-label="تبديل الوضع">
-                <span class="stars"></span>
-                <span class="moon-craters"></span>
+                <span class="stars"></span><span class="moon-craters"></span>
             </button>
         </div>
     </nav>
 
-    <!-- Mobile Menu Overlay -->
     <div class="mobile-menu" id="mobile-menu-overlay">
         <div class="sheet">
             <a href="index.html">الرئيسية</a>
             <a href="about.html">عن مكسبو</a>
-            <a href="activities.html">أنشطة مكسبو</a>
-            <a href="workshops.html">ورش العمل</a>
+            <a href="programs.html">البرامج</a>
+            <a href="activities.html">الأنشطة</a>
+            <a href="challenges.html">التحديات</a>
             <a href="exhibitions.html">معارض الابتكار</a>
-            <a href="competitions.html">مسابقات تحفيزية</a>
-            <a href="news.html">آخر الأخبار</a>
+            <a href="market.html">سوق الابتكار</a>
+            <a href="opportunities.html">الفرص</a>
+            <a href="community.html">المجتمع</a>
+            <a href="content.html">المحتوى</a>
+            <a href="partners.html">الشركاء</a>
             <a href="contact.html">تواصل معنا</a>
             <div class="mobile-auth">
                 <a href="login.html" class="btn btn-ghost">تسجيل الدخول</a>
@@ -73,184 +71,127 @@
     </div>
 
     <section class="section container">
-        <h1 class="section-title">تواصل معنا</h1>
-        <p
-            style="text-align: center; margin-bottom: 50px; font-size: 1.2rem; color: var(--text-muted); max-width: 600px; margin-left: auto; margin-right: auto;">
-            نحن هنا لمساعدتك! تواصل معنا لأي استفسار أو اقتراح أو للانضمام إلى مجتمع المبتكرين في مكسبو.
-        </p>
+        <div class="glass" style="padding: 60px 40px; text-align: center; margin-bottom: 50px;">
+            <h1 class="section-title" style="margin-bottom: 20px;">
+                <i class="fas fa-envelope" style="margin-left: 15px; color: var(--primary-color);"></i>تواصل معنا
+            </h1>
+            <p style="font-size: 1.2rem; color: var(--text-muted); max-width: 700px; margin: 0 auto;">
+                نحن هنا لمساعدتك! تواصل معنا لأي استفسار أو اقتراح أو طلب شراكة.
+            </p>
+        </div>
 
-        <div class="contact-container">
-            <!-- Contact Information -->
-            <div class="glass contact-info">
-                <h3 style="margin-bottom: 25px; color: var(--primary-color); font-size: 1.5rem;">
-                    <i class="fas fa-address-card" style="margin-left: 10px;"></i>معلومات التواصل
-                </h3>
-
-                <div class="contact-detail">
-                    <div
-                        style="width: 50px; height: 50px; background: rgba(31, 165, 158, 0.15); border-radius: 12px; display: flex; align-items: center; justify-content: center;">
-                        <i class="fas fa-map-marker-alt" style="color: var(--primary-color); font-size: 1.3rem;"></i>
+        <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); margin-bottom: 50px;">
+            <!-- معلومات الاتصال -->
+            <div class="card glass" style="padding: 40px;">
+                <h2 style="color: var(--primary-color); margin-bottom: 30px;">
+                    <i class="fas fa-info-circle" style="margin-left: 10px;"></i>معلومات الاتصال
+                </h2>
+                <div style="margin-bottom: 25px;">
+                    <div style="display: flex; align-items: center; margin-bottom: 15px;">
+                        <i class="fas fa-map-marker-alt"
+                            style="font-size: 1.2rem; color: var(--primary-color); margin-left: 15px; width: 25px;"></i>
+                        <span>صنعاء، اليمن</span>
                     </div>
-                    <div>
-                        <strong style="color: var(--text-strong);">العنوان</strong>
-                        <p style="color: var(--text-muted); font-size: 0.95rem;">اليمن - صنعاء - حدة</p>
+                    <div style="display: flex; align-items: center; margin-bottom: 15px;">
+                        <i class="fas fa-phone"
+                            style="font-size: 1.2rem; color: var(--primary-color); margin-left: 15px; width: 25px;"></i>
+                        <span dir="ltr">+967 77X XXX XXX</span>
+                    </div>
+                    <div style="display: flex; align-items: center; margin-bottom: 15px;">
+                        <i class="fas fa-envelope"
+                            style="font-size: 1.2rem; color: var(--primary-color); margin-left: 15px; width: 25px;"></i>
+                        <span>info@makespo.com</span>
+                    </div>
+                    <div style="display: flex; align-items: center;">
+                        <i class="fas fa-clock"
+                            style="font-size: 1.2rem; color: var(--primary-color); margin-left: 15px; width: 25px;"></i>
+                        <span>الأحد - الخميس: 9 ص - 5 م</span>
                     </div>
                 </div>
-
-                <div class="contact-detail">
-                    <div
-                        style="width: 50px; height: 50px; background: rgba(31, 165, 158, 0.15); border-radius: 12px; display: flex; align-items: center; justify-content: center;">
-                        <i class="fas fa-phone" style="color: var(--primary-color); font-size: 1.3rem;"></i>
-                    </div>
-                    <div>
-                        <strong style="color: var(--text-strong);">الهاتف</strong>
-                        <p style="color: var(--text-muted); font-size: 0.95rem;">+967 770 000 000</p>
-                    </div>
-                </div>
-
-                <div class="contact-detail">
-                    <div
-                        style="width: 50px; height: 50px; background: rgba(31, 165, 158, 0.15); border-radius: 12px; display: flex; align-items: center; justify-content: center;">
-                        <i class="fas fa-envelope" style="color: var(--primary-color); font-size: 1.3rem;"></i>
-                    </div>
-                    <div>
-                        <strong style="color: var(--text-strong);">البريد الإلكتروني</strong>
-                        <p style="color: var(--text-muted); font-size: 0.95rem;">info@makespo.com</p>
-                    </div>
-                </div>
-
-                <div class="contact-detail">
-                    <div
-                        style="width: 50px; height: 50px; background: rgba(31, 165, 158, 0.15); border-radius: 12px; display: flex; align-items: center; justify-content: center;">
-                        <i class="fas fa-clock" style="color: var(--primary-color); font-size: 1.3rem;"></i>
-                    </div>
-                    <div>
-                        <strong style="color: var(--text-strong);">ساعات العمل</strong>
-                        <p style="color: var(--text-muted); font-size: 0.95rem;">الأحد - الخميس: 9 ص - 5 م</p>
-                    </div>
-                </div>
-
-                <div class="social-links"
-                    style="margin-top: 30px; padding-top: 20px; border-top: 1px solid var(--glass-border);">
-                    <p style="margin-bottom: 15px; color: var(--text-strong); font-weight: bold;">تابعنا على</p>
-                    <div style="display: flex; gap: 12px;">
-                        <a href="#" class="social-icon"
-                            style="width: 45px; height: 45px; background: rgba(31, 165, 158, 0.1); border-radius: 12px; display: flex; align-items: center; justify-content: center; color: var(--primary-color); text-decoration: none; transition: all 0.3s;">
-                            <i class="fab fa-facebook-f"></i>
-                        </a>
-                        <a href="#" class="social-icon"
-                            style="width: 45px; height: 45px; background: rgba(31, 165, 158, 0.1); border-radius: 12px; display: flex; align-items: center; justify-content: center; color: var(--primary-color); text-decoration: none; transition: all 0.3s;">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                        <a href="#" class="social-icon"
-                            style="width: 45px; height: 45px; background: rgba(31, 165, 158, 0.1); border-radius: 12px; display: flex; align-items: center; justify-content: center; color: var(--primary-color); text-decoration: none; transition: all 0.3s;">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                        <a href="#" class="social-icon"
-                            style="width: 45px; height: 45px; background: rgba(31, 165, 158, 0.1); border-radius: 12px; display: flex; align-items: center; justify-content: center; color: var(--primary-color); text-decoration: none; transition: all 0.3s;">
-                            <i class="fab fa-linkedin-in"></i>
-                        </a>
-                        <a href="#" class="social-icon"
-                            style="width: 45px; height: 45px; background: rgba(31, 165, 158, 0.1); border-radius: 12px; display: flex; align-items: center; justify-content: center; color: var(--primary-color); text-decoration: none; transition: all 0.3s;">
-                            <i class="fab fa-youtube"></i>
-                        </a>
-                    </div>
+                <h3 style="margin-top: 30px; margin-bottom: 15px;">تابعنا</h3>
+                <div style="display: flex; gap: 15px;">
+                    <a href="#"
+                        style="width: 45px; height: 45px; background: rgba(31, 165, 158, 0.15); border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                        <i class="fab fa-facebook-f" style="color: var(--primary-color);"></i>
+                    </a>
+                    <a href="#"
+                        style="width: 45px; height: 45px; background: rgba(31, 165, 158, 0.15); border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                        <i class="fab fa-twitter" style="color: var(--primary-color);"></i>
+                    </a>
+                    <a href="#"
+                        style="width: 45px; height: 45px; background: rgba(31, 165, 158, 0.15); border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                        <i class="fab fa-instagram" style="color: var(--primary-color);"></i>
+                    </a>
+                    <a href="#"
+                        style="width: 45px; height: 45px; background: rgba(31, 165, 158, 0.15); border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                        <i class="fab fa-linkedin-in" style="color: var(--primary-color);"></i>
+                    </a>
                 </div>
             </div>
 
-            <!-- Contact Form -->
-            <div class="glass contact-form-container">
-                <h3 style="margin-bottom: 25px; color: var(--primary-color); font-size: 1.5rem;">
-                    <i class="fas fa-paper-plane" style="margin-left: 10px;"></i>أرسل لنا رسالة
-                </h3>
+            <!-- نموذج الاتصال -->
+            <div class="card glass" style="padding: 40px;">
+                <h2 style="color: var(--primary-color); margin-bottom: 30px;">
+                    <i class="fas fa-paper-plane" style="margin-left: 10px;"></i>أرسل رسالة
+                </h2>
                 <form>
-                    <div class="form-row">
-                        <input type="text" placeholder="الاسم الكامل" class="form-input" required>
-                        <input type="email" placeholder="البريد الإلكتروني" class="form-input" required>
+                    <div style="margin-bottom: 20px;">
+                        <label style="display: block; margin-bottom: 8px;">الاسم الكامل</label>
+                        <input type="text" class="form-input full-width" placeholder="أدخل اسمك"
+                            style="margin-bottom: 0;">
                     </div>
-                    <div class="form-row">
-                        <input type="tel" placeholder="رقم الهاتف" class="form-input">
-                        <select class="form-input" style="cursor: pointer;">
-                            <option value="" disabled selected>اختر الموضوع</option>
+                    <div style="margin-bottom: 20px;">
+                        <label style="display: block; margin-bottom: 8px;">البريد الإلكتروني</label>
+                        <input type="email" class="form-input full-width" placeholder="example@email.com"
+                            style="margin-bottom: 0;">
+                    </div>
+                    <div style="margin-bottom: 20px;">
+                        <label style="display: block; margin-bottom: 8px;">الموضوع</label>
+                        <select class="form-input full-width" style="margin-bottom: 0;">
+                            <option value="">اختر الموضوع</option>
                             <option value="general">استفسار عام</option>
-                            <option value="partnership">شراكات وتعاون</option>
-                            <option value="join">الانضمام للفريق</option>
+                            <option value="programs">حول البرامج</option>
+                            <option value="partnership">طلب شراكة</option>
+                            <option value="investment">فرص استثمارية</option>
                             <option value="support">دعم فني</option>
-                            <option value="suggestion">اقتراح أو فكرة</option>
                         </select>
                     </div>
-                    <input type="text" placeholder="عنوان الرسالة" class="form-input full-width">
-                    <textarea placeholder="اكتب رسالتك هنا..." rows="5" class="form-textarea full-width"
-                        required></textarea>
-                    <button type="submit" class="btn btn-primary"
-                        style="width: 100%; padding: 15px; font-size: 1.1rem;">
-                        <i class="fas fa-paper-plane" style="margin-left: 8px;"></i>إرسال الرسالة
+                    <div style="margin-bottom: 20px;">
+                        <label style="display: block; margin-bottom: 8px;">الرسالة</label>
+                        <textarea class="form-input full-width" rows="5" placeholder="اكتب رسالتك هنا..."
+                            style="margin-bottom: 0; resize: vertical;"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="width: 100%; padding: 15px;">
+                        <i class="fas fa-paper-plane" style="margin-left: 8px;"></i>إرسال
                     </button>
                 </form>
             </div>
         </div>
 
-        <!-- FAQ Section -->
-        <div style="margin-top: 80px;">
-            <h2 class="section-title" style="font-size: 2rem; margin-bottom: 40px;">
-                <i class="fas fa-question-circle" style="margin-left: 10px;"></i>الأسئلة الشائعة
-            </h2>
-            <div class="grid">
-                <div class="card glass">
-                    <div class="card-icon"><i class="fas fa-user-plus"></i></div>
-                    <h3>كيف يمكنني التسجيل في الفعاليات؟</h3>
-                    <p>يمكنك التسجيل من خلال إنشاء حساب في الموقع ثم التوجه للفعالية المرغوبة والضغط على زر التسجيل.</p>
-                </div>
-                <div class="card glass">
-                    <div class="card-icon"><i class="fas fa-money-bill-wave"></i></div>
-                    <h3>هل الفعاليات مجانية؟</h3>
-                    <p>معظم الفعاليات وورش العمل مجانية ومدعومة بالكامل، وبعضها قد يتطلب رسوم رمزية يتم الإعلان عنها.
-                    </p>
-                </div>
-                <div class="card glass">
-                    <div class="card-icon"><i class="fas fa-map-marked-alt"></i></div>
-                    <h3>أين يقع مقركم الرئيسي؟</h3>
-                    <p>يقع مقرنا الرئيسي في صنعاء، حدة، ويمكنكم زيارتنا خلال أوقات الدوام الرسمي من الأحد إلى الخميس.
-                    </p>
-                </div>
-                <div class="card glass">
-                    <div class="card-icon"><i class="fas fa-handshake"></i></div>
-                    <h3>كيف أصبح شريكاً أو راعياً؟</h3>
-                    <p>نرحب بالشركاء والرعاة! تواصل معنا عبر النموذج أعلاه أو راسلنا على البريد الإلكتروني للحصول على
-                        التفاصيل.</p>
-                </div>
-                <div class="card glass">
-                    <div class="card-icon"><i class="fas fa-users"></i></div>
-                    <h3>هل يمكنني الانضمام لفريق مكسبو؟</h3>
-                    <p>نعم! نحن دائماً نبحث عن مواهب جديدة. أرسل سيرتك الذاتية عبر صفحة التواصل مع ذكر "الانضمام للفريق"
-                        في الموضوع.</p>
-                </div>
-                <div class="card glass">
-                    <div class="card-icon"><i class="fas fa-certificate"></i></div>
-                    <h3>هل أحصل على شهادة بعد الورش؟</h3>
-                    <p>نعم، يحصل المشاركون الملتزمون على شهادات معتمدة من مكسبو بعد إتمام الورش والدورات التدريبية
-                        بنجاح.</p>
-                </div>
+        <!-- الأسئلة الشائعة -->
+        <h2 class="section-title" style="font-size: 1.8rem; margin-bottom: 30px;">
+            <i class="fas fa-question-circle" style="margin-left: 10px;"></i>الأسئلة الشائعة
+        </h2>
+        <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));">
+            <div class="card glass">
+                <h3 style="color: var(--primary-color); margin-bottom: 10px;">كيف أنضم لبرامج مكسبو؟</h3>
+                <p style="color: var(--text-muted);">يمكنك التسجيل في المنصة ثم التقديم على البرامج المتاحة من خلال صفحة
+                    البرامج. ستتم مراجعة طلبك والتواصل معك.</p>
             </div>
-        </div>
-
-        <!-- Quick Links -->
-        <div style="margin-top: 60px; text-align: center;">
-            <div class="glass" style="padding: 40px; display: inline-block; max-width: 800px;">
-                <h3 style="color: var(--primary-color); margin-bottom: 20px;">روابط سريعة</h3>
-                <p style="color: var(--text-muted); margin-bottom: 25px;">استكشف المزيد من صفحات مكسبو</p>
-                <div style="display: flex; flex-wrap: wrap; gap: 15px; justify-content: center;">
-                    <a href="index.html" class="btn btn-ghost" style="padding: 10px 25px;"><i class="fas fa-home"
-                            style="margin-left: 8px;"></i>الرئيسية</a>
-                    <a href="about.html" class="btn btn-ghost" style="padding: 10px 25px;"><i class="fas fa-info-circle"
-                            style="margin-left: 8px;"></i>عن مكسبو</a>
-                    <a href="activities.html" class="btn btn-ghost" style="padding: 10px 25px;"><i class="fas fa-tasks"
-                            style="margin-left: 8px;"></i>الأنشطة</a>
-                    <a href="news.html" class="btn btn-ghost" style="padding: 10px 25px;"><i class="fas fa-newspaper"
-                            style="margin-left: 8px;"></i>الأخبار</a>
-                    <a href="register.html" class="btn btn-primary" style="padding: 10px 25px;"><i
-                            class="fas fa-user-plus" style="margin-left: 8px;"></i>إنشاء حساب</a>
-                </div>
+            <div class="card glass">
+                <h3 style="color: var(--primary-color); margin-bottom: 10px;">ما هي متطلبات التقديم؟</h3>
+                <p style="color: var(--text-muted);">تختلف المتطلبات حسب البرنامج، لكن بشكل عام نبحث عن أفكار مبتكرة
+                    وفرق ملتزمة بتطوير مشاريعها.</p>
+            </div>
+            <div class="card glass">
+                <h3 style="color: var(--primary-color); margin-bottom: 10px;">هل البرامج مجانية؟</h3>
+                <p style="color: var(--text-muted);">معظم برامجنا مجانية بالكامل، وبعضها يتطلب رسوم رمزية تُخصص لتغطية
+                    تكاليف التشغيل.</p>
+            </div>
+            <div class="card glass">
+                <h3 style="color: var(--primary-color); margin-bottom: 10px;">كيف أصبح شريكاً لمكسبو؟</h3>
+                <p style="color: var(--text-muted);">نرحب بالشراكات! تواصل معنا عبر النموذج أعلاه أو راسلنا على البريد
+                    الإلكتروني لمناقشة فرص التعاون.</p>
             </div>
         </div>
     </section>
@@ -259,7 +200,7 @@
         <div class="container">
             <img src="logo.png" alt="Makespo Logo" style="height: 60px; margin-bottom: 20px;">
             <p style="color: var(--text-muted); max-width: 500px; margin: 0 auto 20px;">مكسبو هي المنصة الرائدة في اليمن
-                لرعاية المبتكرين وتنظيم الفعاليات الإبداعية.</p>
+                لرعاية المبتكرين.</p>
             <div class="footer-links">
                 <a href="#"><i class="fab fa-facebook-f"></i></a>
                 <a href="#"><i class="fab fa-twitter"></i></a>

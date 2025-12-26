@@ -4,67 +4,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>عن مكسبو | من نحن</title>
+    <title>مكسبو | عن مكسبو</title>
+    <meta name="description"
+        content="تعرف على منصة مكسبو - رؤيتنا ورسالتنا وأهدافنا في دعم الابتكار وريادة الأعمال في اليمن">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
 <body>
-    <!-- Re-use Navbar (Static Include) -->
     <nav class="navbar glass">
-        <!-- Mobile Controls -->
         <div class="mobile-controls">
             <button class="theme-toggle" id="theme-toggle" aria-label="تبديل الوضع">
-                <span class="stars"></span>
-                <span class="moon-craters"></span>
+                <span class="stars"></span><span class="moon-craters"></span>
             </button>
-            <div class="menu-toggle" id="mobile-menu">
-                <i class="fas fa-bars"></i>
-            </div>
+            <div class="menu-toggle" id="mobile-menu"><i class="fas fa-bars"></i></div>
         </div>
-
         <a href="index.html" class="nav-brand">
-            <img src="logo.png" alt="Makespo Logo">
-            <span>مكسبو</span>
+            <img src="logo.png" alt="Makespo Logo"><span>مكسبو</span>
         </a>
-
         <ul class="nav-links">
             <li><a href="index.html" class="nav-link">الرئيسية</a></li>
             <li><a href="about.html" class="nav-link active" style="color:var(--primary-color);">عن مكسبو</a></li>
-            <li><a href="activities.html" class="nav-link">أنشطة مكسبو</a></li>
-            <li><a href="workshops.html" class="nav-link">ورش العمل</a></li>
+            <li><a href="programs.html" class="nav-link">البرامج</a></li>
+            <li><a href="activities.html" class="nav-link">الأنشطة</a></li>
+            <li><a href="challenges.html" class="nav-link">التحديات</a></li>
+            <li><a href="exhibitions.html" class="nav-link">معارض الابتكار</a></li>
             <li class="dropdown">
-                <a href="#" class="nav-link">فعاليات المهرجان <i class="fas fa-chevron-down"
-                        style="font-size: 0.8rem;"></i></a>
+                <a href="#" class="nav-link">المزيد <i class="fas fa-chevron-down" style="font-size: 0.8rem;"></i></a>
                 <div class="dropdown-content glass">
-                    <a href="exhibitions.html" class="dropdown-item"><i class="fas fa-lightbulb"></i> معارض الابتكار</a>
-                    <a href="competitions.html" class="dropdown-item"><i class="fas fa-trophy"></i> مسابقات تحفيزية</a>
+                    <a href="market.html" class="dropdown-item"><i class="fas fa-store"></i> سوق الابتكار</a>
+                    <a href="opportunities.html" class="dropdown-item"><i class="fas fa-door-open"></i> الفرص</a>
+                    <a href="community.html" class="dropdown-item"><i class="fas fa-users"></i> المجتمع</a>
+                    <a href="content.html" class="dropdown-item"><i class="fas fa-newspaper"></i> المحتوى</a>
+                    <a href="partners.html" class="dropdown-item"><i class="fas fa-handshake"></i> الشركاء</a>
                 </div>
             </li>
-            <li><a href="news.html" class="nav-link">آخر الأخبار</a></li>
             <li><a href="contact.html" class="nav-link">تواصل معنا</a></li>
         </ul>
-
         <div class="nav-auth">
             <a href="login.html" class="btn btn-ghost">تسجيل الدخول</a>
             <a href="register.html" class="btn btn-primary">إنشاء حساب</a>
             <button class="theme-toggle" id="theme-toggle-desktop" aria-label="تبديل الوضع">
-                <span class="stars"></span>
-                <span class="moon-craters"></span>
+                <span class="stars"></span><span class="moon-craters"></span>
             </button>
         </div>
     </nav>
 
-    <!-- Mobile Menu Overlay -->
     <div class="mobile-menu" id="mobile-menu-overlay">
         <div class="sheet">
             <a href="index.html">الرئيسية</a>
             <a href="about.html">عن مكسبو</a>
-            <a href="activities.html">أنشطة مكسبو</a>
-            <a href="workshops.html">ورش العمل</a>
+            <a href="programs.html">البرامج</a>
+            <a href="activities.html">الأنشطة</a>
+            <a href="challenges.html">التحديات</a>
             <a href="exhibitions.html">معارض الابتكار</a>
-            <a href="competitions.html">مسابقات تحفيزية</a>
-            <a href="news.html">آخر الأخبار</a>
+            <a href="market.html">سوق الابتكار</a>
+            <a href="opportunities.html">الفرص</a>
+            <a href="community.html">المجتمع</a>
+            <a href="content.html">المحتوى</a>
+            <a href="partners.html">الشركاء</a>
             <a href="contact.html">تواصل معنا</a>
             <div class="mobile-auth">
                 <a href="login.html" class="btn btn-ghost">تسجيل الدخول</a>
@@ -74,38 +72,141 @@
     </div>
 
     <section class="section container">
-        <h1 class="section-title">من نحن</h1>
-
-        <div class="glass" style="padding: 40px; margin-bottom: 50px;">
-            <p style="font-size: 1.3rem; line-height: 2; text-align: center; max-width: 800px; margin: 0 auto;">
-                <strong>منصة مكسبو</strong> هي المنصة الأولى من نوعها في اليمن التي تهدف إلى جمع المبتكرين والمبدعين تحت
-                سقف واحد. نحن نؤمن بأن المستقبل يُبنى بأيدي الشباب، ولهذا نسعى لتوفير البيئة والموارد اللازمة لتحويل
-                الأفكار إلى واقع ملموس يخدم المجتمع.
+        <!-- من نحن -->
+        <div class="glass" style="padding: 60px 40px; text-align: center; margin-bottom: 50px;">
+            <h1 class="section-title" style="margin-bottom: 20px;">
+                <i class="fas fa-info-circle" style="margin-left: 15px; color: var(--primary-color);"></i>من نحن
+            </h1>
+            <p style="font-size: 1.2rem; line-height: 2; max-width: 800px; margin: 0 auto; color: var(--text-muted);">
+                <strong style="color: var(--primary-color);">مكسبو</strong> هي منصة رائدة لدعم الابتكار وريادة الأعمال
+                في اليمن. نعمل على بناء منظومة متكاملة تجمع المبتكرين ورواد الأعمال والجهات الداعمة والمستثمرين في بيئة
+                تفاعلية تُمكّن الجميع من تحقيق طموحاتهم وتحويل أفكارهم إلى مشاريع ناجحة تُسهم في التنمية الاقتصادية
+                والاجتماعية.
             </p>
         </div>
 
-        <div class="grid">
-            <div class="card glass">
+        <!-- الرؤية والرسالة -->
+        <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); margin-bottom: 50px;">
+            <div class="card glass" style="padding: 40px;">
                 <div class="card-icon"><i class="fas fa-eye"></i></div>
-                <h3>رؤيتنا</h3>
-                <p>أن نكون المحرك الرئيسي للنهضة التكنولوجية والإبداعية في اليمن والمنطقة، وبناء مجتمع معرفي منتج.</p>
+                <h2>رؤيتنا</h2>
+                <p style="line-height: 1.8;">أن نكون المنصة الرائدة في تمكين الابتكار وريادة الأعمال في اليمن والمنطقة،
+                    وبناء جيل من المبتكرين ورواد الأعمال القادرين على إحداث تغيير حقيقي ومستدام.</p>
             </div>
-            <div class="card glass">
+            <div class="card glass" style="padding: 40px;">
                 <div class="card-icon"><i class="fas fa-bullseye"></i></div>
-                <h3>أهدافنا</h3>
-                <p>دعم رواد الأعمال، توفير فرص تعليمية حديثة، وخلق شبكة تواصل قوية بين المبتكرين والمستثمرين.</p>
+                <h2>رسالتنا</h2>
+                <p style="line-height: 1.8;">بناء منظومة متكاملة لدعم المبتكرين ورواد الأعمال من خلال توفير البرامج
+                    والأدوات والشبكات والفرص اللازمة لتحويل الأفكار إلى مشاريع ناجحة ومستدامة.</p>
+            </div>
+        </div>
+
+        <!-- الأهداف -->
+        <h2 class="section-title" style="font-size: 1.8rem; margin-bottom: 30px;">
+            <i class="fas fa-flag" style="margin-left: 10px;"></i>أهدافنا
+        </h2>
+        <div class="grid" style="margin-bottom: 50px;">
+            <div class="card glass">
+                <div class="card-icon"><i class="fas fa-lightbulb"></i></div>
+                <h3>تحفيز الابتكار</h3>
+                <p>خلق بيئة محفزة للإبداع والابتكار تشجع الشباب على تطوير حلول مبتكرة للتحديات المحلية.</p>
             </div>
             <div class="card glass">
-                <div class="card-icon"><i class="fas fa-hand-holding-heart"></i></div>
-                <h3>قيمنا</h3>
-                <p>الابتكار، الشفافية، التعاون، والتميز في كل ما نقدمه لخدمة شبابنا.</p>
+                <div class="card-icon"><i class="fas fa-rocket"></i></div>
+                <h3>دعم رواد الأعمال</h3>
+                <p>توفير الدعم الشامل لرواد الأعمال من الفكرة حتى التنفيذ والنمو.</p>
+            </div>
+            <div class="card glass">
+                <div class="card-icon"><i class="fas fa-network-wired"></i></div>
+                <h3>بناء الشبكات</h3>
+                <p>ربط المبتكرين بالمستثمرين والشركاء والخبراء لتسهيل النمو والتوسع.</p>
+            </div>
+            <div class="card glass">
+                <div class="card-icon"><i class="fas fa-graduation-cap"></i></div>
+                <h3>بناء القدرات</h3>
+                <p>تقديم برامج تدريبية متخصصة لتطوير المهارات الريادية والتقنية.</p>
+            </div>
+            <div class="card glass">
+                <div class="card-icon"><i class="fas fa-globe"></i></div>
+                <h3>نشر ثقافة الابتكار</h3>
+                <p>تعزيز ثقافة الابتكار وريادة الأعمال في المجتمع من خلال الفعاليات والمحتوى.</p>
+            </div>
+            <div class="card glass">
+                <div class="card-icon"><i class="fas fa-chart-line"></i></div>
+                <h3>التنمية الاقتصادية</h3>
+                <p>المساهمة في التنمية الاقتصادية من خلال دعم المشاريع الناشئة وخلق فرص العمل.</p>
+            </div>
+        </div>
+
+        <!-- الفئة المستهدفة -->
+        <h2 class="section-title" style="font-size: 1.8rem; margin-bottom: 30px;">
+            <i class="fas fa-users" style="margin-left: 10px;"></i>من نخدم؟
+        </h2>
+        <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); margin-bottom: 50px;">
+            <div class="card glass" style="text-align: center;">
+                <i class="fas fa-user-graduate"
+                    style="font-size: 2.5rem; color: var(--primary-color); margin-bottom: 15px;"></i>
+                <h3>المبتكرون</h3>
+                <p style="font-size: 0.95rem;">أصحاب الأفكار المبتكرة الباحثين عن دعم لتحويلها لواقع</p>
+            </div>
+            <div class="card glass" style="text-align: center;">
+                <i class="fas fa-briefcase"
+                    style="font-size: 2.5rem; color: var(--primary-color); margin-bottom: 15px;"></i>
+                <h3>رواد الأعمال</h3>
+                <p style="font-size: 0.95rem;">أصحاب المشاريع الناشئة الباحثين عن النمو والتوسع</p>
+            </div>
+            <div class="card glass" style="text-align: center;">
+                <i class="fas fa-building"
+                    style="font-size: 2.5rem; color: var(--primary-color); margin-bottom: 15px;"></i>
+                <h3>الجهات الداعمة</h3>
+                <p style="font-size: 0.95rem;">المؤسسات الراغبة في دعم منظومة الابتكار</p>
+            </div>
+            <div class="card glass" style="text-align: center;">
+                <i class="fas fa-chart-pie"
+                    style="font-size: 2.5rem; color: var(--primary-color); margin-bottom: 15px;"></i>
+                <h3>المستثمرون</h3>
+                <p style="font-size: 0.95rem;">الباحثون عن فرص استثمارية واعدة</p>
+            </div>
+        </div>
+
+        <!-- الأثر -->
+        <div class="glass" style="padding: 50px 40px; text-align: center;">
+            <h2 style="color: var(--primary-color); margin-bottom: 30px;">
+                <i class="fas fa-chart-bar" style="margin-left: 10px;"></i>أثرنا
+            </h2>
+            <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));">
+                <div style="text-align: center;">
+                    <div style="font-size: 2.5rem; font-weight: bold; color: var(--primary-color);">500+</div>
+                    <p style="color: var(--text-muted);">مبتكر ورائد أعمال</p>
+                </div>
+                <div style="text-align: center;">
+                    <div style="font-size: 2.5rem; font-weight: bold; color: var(--primary-color);">100+</div>
+                    <p style="color: var(--text-muted);">مشروع مدعوم</p>
+                </div>
+                <div style="text-align: center;">
+                    <div style="font-size: 2.5rem; font-weight: bold; color: var(--primary-color);">50+</div>
+                    <p style="color: var(--text-muted);">فعالية وورشة</p>
+                </div>
+                <div style="text-align: center;">
+                    <div style="font-size: 2.5rem; font-weight: bold; color: var(--primary-color);">1M+</div>
+                    <p style="color: var(--text-muted);">ريال تمويل</p>
+                </div>
             </div>
         </div>
     </section>
 
     <footer>
         <div class="container">
-            <p>2025 | جميع الحقوق محفوظة لفريق مكسبو التقني</p>
+            <img src="logo.png" alt="Makespo Logo" style="height: 60px; margin-bottom: 20px;">
+            <p style="color: var(--text-muted); max-width: 500px; margin: 0 auto 20px;">مكسبو هي المنصة الرائدة في اليمن
+                لرعاية المبتكرين.</p>
+            <div class="footer-links">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <p style="font-size: 0.9rem; color: var(--text-muted);">2025 | جميع الحقوق محفوظة لفريق مكسبو التقني</p>
         </div>
     </footer>
     <script src="script.js"></script>

@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مكسبو | الفرص</title>
+    <meta name="description" content="اكتشف فرص التمويل والشراكات والتدريب والمنح المتاحة من خلال منصة مكسبو">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <nav class="navbar glass">
+        <div class="mobile-controls">
+            <button class="theme-toggle" id="theme-toggle" aria-label="تبديل الوضع">
+                <span class="stars"></span>
+                <span class="moon-craters"></span>
+            </button>
+            <div class="menu-toggle" id="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+
+        <a href="index.html" class="nav-brand">
+            <img src="logo.png" alt="Makespo Logo">
+            <span>مكسبو</span>
+        </a>
+
+        <ul class="nav-links">
+            <li><a href="index.html" class="nav-link">الرئيسية</a></li>
+            <li><a href="about.html" class="nav-link">عن مكسبو</a></li>
+            <li><a href="programs.html" class="nav-link">البرامج</a></li>
+            <li><a href="activities.html" class="nav-link">الأنشطة</a></li>
+            <li><a href="challenges.html" class="nav-link">التحديات</a></li>
+            <li><a href="exhibitions.html" class="nav-link">معارض الابتكار</a></li>
+            <li class="dropdown">
+                <a href="#" class="nav-link" style="color:var(--primary-color);">المزيد <i class="fas fa-chevron-down"
+                        style="font-size: 0.8rem;"></i></a>
+                <div class="dropdown-content glass">
+                    <a href="market.html" class="dropdown-item"><i class="fas fa-store"></i> سوق الابتكار</a>
+                    <a href="opportunities.html" class="dropdown-item" style="color:var(--primary-color);"><i
+                            class="fas fa-door-open"></i> الفرص</a>
+                    <a href="community.html" class="dropdown-item"><i class="fas fa-users"></i> المجتمع</a>
+                    <a href="content.html" class="dropdown-item"><i class="fas fa-newspaper"></i> المحتوى</a>
+                    <a href="partners.html" class="dropdown-item"><i class="fas fa-handshake"></i> الشركاء</a>
+                </div>
+            </li>
+            <li><a href="contact.html" class="nav-link">تواصل معنا</a></li>
+        </ul>
+
+        <div class="nav-auth">
+            <a href="login.html" class="btn btn-ghost">تسجيل الدخول</a>
+            <a href="register.html" class="btn btn-primary">إنشاء حساب</a>
+            <button class="theme-toggle" id="theme-toggle-desktop" aria-label="تبديل الوضع">
+                <span class="stars"></span>
+                <span class="moon-craters"></span>
+            </button>
+        </div>
+    </nav>
+
+    <div class="mobile-menu" id="mobile-menu-overlay">
+        <div class="sheet">
+            <a href="index.html">الرئيسية</a>
+            <a href="about.html">عن مكسبو</a>
+            <a href="programs.html">البرامج</a>
+            <a href="activities.html">الأنشطة</a>
+            <a href="challenges.html">التحديات</a>
+            <a href="exhibitions.html">معارض الابتكار</a>
+            <a href="market.html">سوق الابتكار</a>
+            <a href="opportunities.html">الفرص</a>
+            <a href="community.html">المجتمع</a>
+            <a href="content.html">المحتوى</a>
+            <a href="partners.html">الشركاء</a>
+            <a href="contact.html">تواصل معنا</a>
+            <div class="mobile-auth">
+                <a href="login.html" class="btn btn-ghost">تسجيل الدخول</a>
+                <a href="register.html" class="btn btn-primary">إنشاء حساب</a>
+            </div>
+        </div>
+    </div>
+
+    <section class="section container">
+        <div class="glass" style="padding: 60px 40px; text-align: center; margin-bottom: 50px;">
+            <h1 class="section-title" style="margin-bottom: 20px;">
+                <i class="fas fa-door-open" style="margin-left: 15px; color: var(--primary-color);"></i>
+                الفرص المتاحة
+            </h1>
+            <p style="font-size: 1.2rem; color: var(--text-muted); max-width: 700px; margin: 0 auto;">
+                نوفر لك مجموعة متنوعة من الفرص لتطوير مسيرتك الريادية - من التمويل والشراكات إلى التدريب والتطوع.
+            </p>
+        </div>
+
+        <!-- فرص التمويل -->
+        <div style="margin-bottom: 60px;">
+            <h2 class="section-title" style="font-size: 1.8rem; margin-bottom: 30px;">
+                <i class="fas fa-coins" style="margin-left: 10px; color: gold;"></i>
+                فرص التمويل
+            </h2>
+            <div class="grid">
+                <div class="card glass">
+                    <div
+                        style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;">
+                        <span
+                            style="background: #28a745; color: white; padding: 5px 15px; border-radius: 20px; font-size: 0.85rem;">متاح</span>
+                        <span style="color: var(--text-muted); font-size: 0.9rem;">ينتهي: 30 يناير 2025</span>
+                    </div>
+                    <div class="card-icon"><i class="fas fa-hand-holding-usd"></i></div>
+                    <h3>منحة المبتكرين الشباب</h3>
+                    <p>منحة تصل إلى 10,000 دولار للمشاريع المبتكرة في مجالات التقنية والصحة والتعليم.</p>
+                    <a href="contact.html" class="btn btn-primary" style="margin-top: 15px; width: 100%;">تقدم الآن</a>
+                </div>
+
+                <div class="card glass">
+                    <div
+                        style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;">
+                        <span
+                            style="background: #28a745; color: white; padding: 5px 15px; border-radius: 20px; font-size: 0.85rem;">متاح</span>
+                        <span style="color: var(--text-muted); font-size: 0.9rem;">ينتهي: 15 فبراير 2025</span>
+                    </div>
+                    <div class="card-icon"><i class="fas fa-seedling"></i></div>
+                    <h3>تمويل المشاريع الخضراء</h3>
+                    <p>تمويل يصل إلى 25,000 دولار للمشاريع البيئية والطاقة المتجددة والزراعة المستدامة.</p>
+                    <a href="contact.html" class="btn btn-primary" style="margin-top: 15px; width: 100%;">تقدم الآن</a>
+                </div>
+
+                <div class="card glass">
+                    <div
+                        style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;">
+                        <span
+                            style="background: #ffc107; color: #333; padding: 5px 15px; border-radius: 20px; font-size: 0.85rem;">قريباً</span>
+                    </div>
+                    <div class="card-icon"><i class="fas fa-rocket"></i></div>
+                    <h3>برنامج تسريع الشركات الناشئة</h3>
+                    <p>استثمار يصل إلى 50,000 دولار مع إرشاد مكثف وفرص للتواصل مع المستثمرين.</p>
+                    <button class="btn btn-ghost" style="margin-top: 15px; width: 100%;" disabled>سيتم الإعلان
+                        قريباً</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- فرص الشراكات -->
+        <div style="margin-bottom: 60px;">
+            <h2 class="section-title" style="font-size: 1.8rem; margin-bottom: 30px;">
+                <i class="fas fa-handshake" style="margin-left: 10px; color: var(--primary-color);"></i>
+                فرص الشراكات
+            </h2>
+            <div class="grid">
+                <div class="card glass">
+                    <div class="card-icon"><i class="fas fa-building"></i></div>
+                    <h3>شراكات القطاع الخاص</h3>
+                    <p>فرص للتعاون مع شركات رائدة في مختلف القطاعات لتطوير وتسويق المشاريع المبتكرة.</p>
+                    <a href="contact.html" class="btn btn-ghost" style="margin-top: 15px; width: 100%;">تعرف أكثر</a>
+                </div>
+
+                <div class="card glass">
+                    <div class="card-icon"><i class="fas fa-university"></i></div>
+                    <h3>شراكات أكاديمية</h3>
+                    <p>تعاون مع جامعات ومراكز بحثية للحصول على دعم علمي وتقني لمشروعك.</p>
+                    <a href="contact.html" class="btn btn-ghost" style="margin-top: 15px; width: 100%;">تعرف أكثر</a>
+                </div>
+
+                <div class="card glass">
+                    <div class="card-icon"><i class="fas fa-globe"></i></div>
+                    <h3>شراكات دولية</h3>
+                    <p>فرص للتوسع والتعاون مع منظمات وشركات دولية في مجال الابتكار وريادة الأعمال.</p>
+                    <a href="contact.html" class="btn btn-ghost" style="margin-top: 15px; width: 100%;">تعرف أكثر</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- فرص التدريب والتطوع -->
+        <div style="margin-bottom: 60px;">
+            <h2 class="section-title" style="font-size: 1.8rem; margin-bottom: 30px;">
+                <i class="fas fa-user-graduate" style="margin-left: 10px; color: #17a2b8;"></i>
+                فرص التدريب والتطوع
+            </h2>
+            <div class="grid">
+                <div class="card glass">
+                    <div class="card-icon"><i class="fas fa-laptop-code"></i></div>
+                    <h3>برنامج المتدربين</h3>
+                    <p>فرصة للعمل مع فريق مكسبو واكتساب خبرة عملية في إدارة برامج الابتكار.</p>
+                    <div style="margin-top: 15px;">
+                        <span
+                            style="background: rgba(31, 165, 158, 0.15); padding: 5px 15px; border-radius: 20px; font-size: 0.85rem; color: var(--primary-color);">3
+                            أشهر</span>
+                    </div>
+                </div>
+
+                <div class="card glass">
+                    <div class="card-icon"><i class="fas fa-hands-helping"></i></div>
+                    <h3>فريق المتطوعين</h3>
+                    <p>انضم لفريق المتطوعين وساهم في تنظيم الفعاليات ودعم المبتكرين ورواد الأعمال.</p>
+                    <div style="margin-top: 15px;">
+                        <span
+                            style="background: rgba(31, 165, 158, 0.15); padding: 5px 15px; border-radius: 20px; font-size: 0.85rem; color: var(--primary-color);">مرن</span>
+                    </div>
+                </div>
+
+                <div class="card glass">
+                    <div class="card-icon"><i class="fas fa-chalkboard-teacher"></i></div>
+                    <h3>برنامج المرشدين</h3>
+                    <p>إذا كنت خبيراً، شارك معرفتك وأرشد الجيل القادم من المبتكرين ورواد الأعمال.</p>
+                    <div style="margin-top: 15px;">
+                        <span
+                            style="background: rgba(31, 165, 158, 0.15); padding: 5px 15px; border-radius: 20px; font-size: 0.85rem; color: var(--primary-color);">للخبراء</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- المنح والمسابقات -->
+        <div style="margin-bottom: 60px;">
+            <h2 class="section-title" style="font-size: 1.8rem; margin-bottom: 30px;">
+                <i class="fas fa-trophy" style="margin-left: 10px; color: gold;"></i>
+                المنح والمسابقات
+            </h2>
+            <div class="grid">
+                <div class="card glass">
+                    <div
+                        style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;">
+                        <span
+                            style="background: #28a745; color: white; padding: 5px 15px; border-radius: 20px; font-size: 0.85rem;">مفتوح</span>
+                    </div>
+                    <div class="card-icon"><i class="fas fa-award"></i></div>
+                    <h3>جائزة الابتكار السنوية</h3>
+                    <p>مسابقة سنوية لأفضل المشاريع المبتكرة مع جوائز قيمة ودعم للتنفيذ.</p>
+                    <p style="color: var(--primary-color); font-weight: bold; margin-top: 10px;">الجائزة: 100,000 ريال
+                    </p>
+                </div>
+
+                <div class="card glass">
+                    <div
+                        style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;">
+                        <span
+                            style="background: #17a2b8; color: white; padding: 5px 15px; border-radius: 20px; font-size: 0.85rem;">دولي</span>
+                    </div>
+                    <div class="card-icon"><i class="fas fa-globe-americas"></i></div>
+                    <h3>منحة الابتكار العربي</h3>
+                    <p>منحة دولية للمبتكرين العرب مع فرصة للتأهل لمراحل متقدمة على المستوى الإقليمي.</p>
+                    <a href="#" class="btn btn-ghost" style="margin-top: 10px; width: 100%;">تفاصيل أكثر</a>
+                </div>
+
+                <div class="card glass">
+                    <div
+                        style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;">
+                        <span
+                            style="background: #ffc107; color: #333; padding: 5px 15px; border-radius: 20px; font-size: 0.85rem;">قريباً</span>
+                    </div>
+                    <div class="card-icon"><i class="fas fa-lightbulb"></i></div>
+                    <h3>هاكاثون الابتكار 2025</h3>
+                    <p>ماراثون برمجي لمدة 48 ساعة لتطوير حلول مبتكرة للتحديات المحلية.</p>
+                    <button class="btn btn-ghost" style="margin-top: 10px; width: 100%;" disabled>سيتم الإعلان
+                        قريباً</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- CTA -->
+        <div class="glass" style="padding: 50px 40px; text-align: center;">
+            <h2 style="color: var(--primary-color); margin-bottom: 15px;">
+                <i class="fas fa-bell" style="margin-left: 10px;"></i>
+                لا تفوت أي فرصة!
+            </h2>
+            <p
+                style="color: var(--text-muted); margin-bottom: 25px; max-width: 500px; margin-left: auto; margin-right: auto;">
+                سجل في منصة مكسبو لتصلك إشعارات بالفرص الجديدة فور إطلاقها
+            </p>
+            <a href="register.html" class="btn btn-primary">
+                <i class="fas fa-user-plus" style="margin-left: 8px;"></i>سجل الآن
+            </a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <img src="logo.png" alt="Makespo Logo" style="height: 60px; margin-bottom: 20px;">
+            <p style="color: var(--text-muted); max-width: 500px; margin: 0 auto 20px;">مكسبو هي المنصة الرائدة في اليمن
+                لرعاية المبتكرين وتنظيم الفعاليات الإبداعية.</p>
+            <div class="footer-links">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <p style="font-size: 0.9rem; color: var(--text-muted);">2025 | جميع الحقوق محفوظة لفريق مكسبو التقني</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

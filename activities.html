@@ -5,66 +5,63 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>مكسبو | الأنشطة</title>
+    <meta name="description" content="اكتشف أنشطة مكسبو - ورش العمل، الفعاليات، الملتقيات، والمسابقات التحفيزية">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
 <body>
     <nav class="navbar glass">
-        <!-- Mobile Controls -->
         <div class="mobile-controls">
             <button class="theme-toggle" id="theme-toggle" aria-label="تبديل الوضع">
-                <span class="stars"></span>
-                <span class="moon-craters"></span>
+                <span class="stars"></span><span class="moon-craters"></span>
             </button>
-            <div class="menu-toggle" id="mobile-menu">
-                <i class="fas fa-bars"></i>
-            </div>
+            <div class="menu-toggle" id="mobile-menu"><i class="fas fa-bars"></i></div>
         </div>
-
         <a href="index.html" class="nav-brand">
-            <img src="logo.png" alt="Makespo Logo">
-            <span>مكسبو</span>
+            <img src="logo.png" alt="Makespo Logo"><span>مكسبو</span>
         </a>
-
         <ul class="nav-links">
             <li><a href="index.html" class="nav-link">الرئيسية</a></li>
             <li><a href="about.html" class="nav-link">عن مكسبو</a></li>
-            <li><a href="activities.html" class="nav-link active" style="color:var(--primary-color);">أنشطة مكسبو</a>
-            </li>
-            <li><a href="workshops.html" class="nav-link">ورش العمل</a></li>
+            <li><a href="programs.html" class="nav-link">البرامج</a></li>
+            <li><a href="activities.html" class="nav-link active" style="color:var(--primary-color);">الأنشطة</a></li>
+            <li><a href="challenges.html" class="nav-link">التحديات</a></li>
+            <li><a href="exhibitions.html" class="nav-link">معارض الابتكار</a></li>
             <li class="dropdown">
-                <a href="#" class="nav-link">فعاليات المهرجان <i class="fas fa-chevron-down"
-                        style="font-size: 0.8rem;"></i></a>
+                <a href="#" class="nav-link">المزيد <i class="fas fa-chevron-down" style="font-size: 0.8rem;"></i></a>
                 <div class="dropdown-content glass">
-                    <a href="exhibitions.html" class="dropdown-item"><i class="fas fa-lightbulb"></i> معارض الابتكار</a>
-                    <a href="competitions.html" class="dropdown-item"><i class="fas fa-trophy"></i> مسابقات تحفيزية</a>
+                    <a href="market.html" class="dropdown-item"><i class="fas fa-store"></i> سوق الابتكار</a>
+                    <a href="opportunities.html" class="dropdown-item"><i class="fas fa-door-open"></i> الفرص</a>
+                    <a href="community.html" class="dropdown-item"><i class="fas fa-users"></i> المجتمع</a>
+                    <a href="content.html" class="dropdown-item"><i class="fas fa-newspaper"></i> المحتوى</a>
+                    <a href="partners.html" class="dropdown-item"><i class="fas fa-handshake"></i> الشركاء</a>
                 </div>
             </li>
-            <li><a href="news.html" class="nav-link">آخر الأخبار</a></li>
             <li><a href="contact.html" class="nav-link">تواصل معنا</a></li>
         </ul>
-
         <div class="nav-auth">
             <a href="login.html" class="btn btn-ghost">تسجيل الدخول</a>
             <a href="register.html" class="btn btn-primary">إنشاء حساب</a>
             <button class="theme-toggle" id="theme-toggle-desktop" aria-label="تبديل الوضع">
-                <span class="stars"></span>
-                <span class="moon-craters"></span>
+                <span class="stars"></span><span class="moon-craters"></span>
             </button>
         </div>
     </nav>
 
-    <!-- Mobile Menu Overlay -->
     <div class="mobile-menu" id="mobile-menu-overlay">
         <div class="sheet">
             <a href="index.html">الرئيسية</a>
             <a href="about.html">عن مكسبو</a>
-            <a href="activities.html">أنشطة مكسبو</a>
-            <a href="workshops.html">ورش العمل</a>
+            <a href="programs.html">البرامج</a>
+            <a href="activities.html">الأنشطة</a>
+            <a href="challenges.html">التحديات</a>
             <a href="exhibitions.html">معارض الابتكار</a>
-            <a href="competitions.html">مسابقات تحفيزية</a>
-            <a href="news.html">آخر الأخبار</a>
+            <a href="market.html">سوق الابتكار</a>
+            <a href="opportunities.html">الفرص</a>
+            <a href="community.html">المجتمع</a>
+            <a href="content.html">المحتوى</a>
+            <a href="partners.html">الشركاء</a>
             <a href="contact.html">تواصل معنا</a>
             <div class="mobile-auth">
                 <a href="login.html" class="btn btn-ghost">تسجيل الدخول</a>
@@ -74,29 +71,142 @@
     </div>
 
     <section class="section container">
-        <h1 class="section-title">أنشطة مكسبو</h1>
-        <div class="grid">
+        <div class="glass" style="padding: 60px 40px; text-align: center; margin-bottom: 50px;">
+            <h1 class="section-title" style="margin-bottom: 20px;">
+                <i class="fas fa-calendar-alt" style="margin-left: 15px; color: var(--primary-color);"></i>أنشطة مكسبو
+            </h1>
+            <p style="font-size: 1.2rem; color: var(--text-muted); max-width: 700px; margin: 0 auto;">
+                مجموعة متنوعة من الأنشطة التفاعلية لدعم المبتكرين ورواد الأعمال - حضورياً وافتراضياً.
+            </p>
+        </div>
+
+        <!-- ورش العمل -->
+        <h2 class="section-title" style="font-size: 1.8rem; margin-bottom: 30px;">
+            <i class="fas fa-chalkboard-teacher" style="margin-left: 10px;"></i>ورش العمل
+        </h2>
+        <div class="grid" style="margin-bottom: 60px;">
             <div class="card glass">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;">
+                    <span
+                        style="background: #28a745; color: white; padding: 5px 15px; border-radius: 20px; font-size: 0.85rem;">قادمة</span>
+                    <span style="color: var(--text-muted); font-size: 0.9rem;">15 يناير 2025</span>
+                </div>
+                <div class="card-icon"><i class="fas fa-chart-bar"></i></div>
+                <h3>بناء نموذج العمل التجاري</h3>
+                <p>ورشة عملية لتعلم كيفية بناء نموذج عمل قوي لمشروعك باستخدام Business Model Canvas.</p>
+                <a href="register.html" class="btn btn-primary" style="margin-top: 15px; width: 100%;">سجل الآن</a>
+            </div>
+            <div class="card glass">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;">
+                    <span
+                        style="background: #28a745; color: white; padding: 5px 15px; border-radius: 20px; font-size: 0.85rem;">قادمة</span>
+                    <span style="color: var(--text-muted); font-size: 0.9rem;">22 يناير 2025</span>
+                </div>
+                <div class="card-icon"><i class="fas fa-bullhorn"></i></div>
+                <h3>العرض التقديمي للمستثمرين</h3>
+                <p>تعلم كيف تقدم مشروعك بشكل احترافي وجذاب للمستثمرين والشركاء المحتملين.</p>
+                <a href="register.html" class="btn btn-primary" style="margin-top: 15px; width: 100%;">سجل الآن</a>
+            </div>
+            <div class="card glass">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;">
+                    <span
+                        style="background: #17a2b8; color: white; padding: 5px 15px; border-radius: 20px; font-size: 0.85rem;">افتراضية</span>
+                    <span style="color: var(--text-muted); font-size: 0.9rem;">30 يناير 2025</span>
+                </div>
                 <div class="card-icon"><i class="fas fa-laptop-code"></i></div>
-                <h2>دورات برمجية</h2>
-                <p>نقدم دورات مكثفة في أحدث لغات البرمجة وتطوير الويب والتطبيقات لتأهيل الشباب لسوق العمل.</p>
+                <h3>أساسيات التسويق الرقمي</h3>
+                <p>ورشة افتراضية عن استراتيجيات التسويق الرقمي الفعالة للشركات الناشئة.</p>
+                <a href="register.html" class="btn btn-primary" style="margin-top: 15px; width: 100%;">سجل الآن</a>
+            </div>
+        </div>
+
+        <!-- الفعاليات والملتقيات -->
+        <h2 class="section-title" style="font-size: 1.8rem; margin-bottom: 30px;">
+            <i class="fas fa-users" style="margin-left: 10px;"></i>الفعاليات والملتقيات
+        </h2>
+        <div class="grid" style="margin-bottom: 60px;">
+            <div class="card glass">
+                <div class="card-icon"><i class="fas fa-microphone-alt"></i></div>
+                <h3>ملتقى رواد الأعمال الشهري</h3>
+                <p>لقاء شهري يجمع رواد الأعمال والمبتكرين لتبادل الخبرات والتعرف على قصص النجاح.</p>
+                <span style="color: var(--primary-color);">كل شهر - صنعاء</span>
             </div>
             <div class="card glass">
-                <div class="card-icon"><i class="fas fa-users-cog"></i></div>
-                <h2>لقاءات تقنية</h2>
-                <p>اجتماعات دورية للمطورين والمهتمين بالتقنية لتبادل الخبرات ومناقشة أحدث التحديات.</p>
+                <div class="card-icon"><i class="fas fa-handshake"></i></div>
+                <h3>يوم التواصل مع المستثمرين</h3>
+                <p>فعالية ربع سنوية لعرض المشاريع الواعدة أمام مجموعة من المستثمرين والممولين.</p>
+                <span style="color: var(--primary-color);">كل 3 أشهر</span>
             </div>
             <div class="card glass">
-                <div class="card-icon"><i class="fas fa-flask"></i></div>
-                <h2>مختبر الابتكار</h2>
-                <p>مساحة مفتوحة ومجهزة بالأدوات اللازمة لمساعدتك على بناء نموذجك الأولي وتجربته.</p>
+                <div class="card-icon"><i class="fas fa-globe"></i></div>
+                <h3>المؤتمر السنوي للابتكار</h3>
+                <p>الحدث الأكبر للابتكار وريادة الأعمال في اليمن يجمع المئات من المبتكرين والخبراء.</p>
+                <span style="color: var(--primary-color);">سنوياً - فبراير</span>
             </div>
+        </div>
+
+        <!-- المسابقات التحفيزية -->
+        <h2 class="section-title" style="font-size: 1.8rem; margin-bottom: 30px;">
+            <i class="fas fa-trophy" style="margin-left: 10px; color: gold;"></i>المسابقات التحفيزية
+        </h2>
+        <div class="grid" style="margin-bottom: 60px;">
+            <div class="card glass">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;">
+                    <span
+                        style="background: #28a745; color: white; padding: 5px 15px; border-radius: 20px; font-size: 0.85rem;">مفتوح</span>
+                </div>
+                <div class="card-icon"><i class="fas fa-code"></i></div>
+                <h3>هاكاثون الابتكار 2025</h3>
+                <p>48 ساعة من البرمجة والإبداع لتطوير حلول مبتكرة للتحديات المحلية.</p>
+                <p style="color: var(--primary-color); font-weight: bold; margin-top: 10px;">الجائزة: 1,000,000 ريال</p>
+                <a href="challenges.html" class="btn btn-ghost" style="margin-top: 10px;">تفاصيل أكثر</a>
+            </div>
+            <div class="card glass">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;">
+                    <span
+                        style="background: #ffc107; color: #333; padding: 5px 15px; border-radius: 20px; font-size: 0.85rem;">قريباً</span>
+                </div>
+                <div class="card-icon"><i class="fas fa-lightbulb"></i></div>
+                <h3>جائزة أفضل فكرة مبتكرة</h3>
+                <p>مسابقة لاختيار أفضل الأفكار المبتكرة مع دعم كامل للتنفيذ للفائزين.</p>
+                <p style="color: var(--primary-color); font-weight: bold; margin-top: 10px;">الجائزة: 500,000 ريال</p>
+            </div>
+            <div class="card glass">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;">
+                    <span
+                        style="background: #6c757d; color: white; padding: 5px 15px; border-radius: 20px; font-size: 0.85rem;">مكتمل</span>
+                </div>
+                <div class="card-icon"><i class="fas fa-video"></i></div>
+                <h3>مسابقة أفضل فيديو ترويجي</h3>
+                <p>مسابقة لإنتاج أفضل فيديو ترويجي لمشروع ناشئ. تم اختيار 3 فائزين.</p>
+                <p style="color: var(--text-muted); margin-top: 10px;">انتهت في ديسمبر 2024</p>
+            </div>
+        </div>
+
+        <!-- CTA -->
+        <div class="glass" style="padding: 50px 40px; text-align: center;">
+            <h2 style="color: var(--primary-color); margin-bottom: 15px;">
+                <i class="fas fa-bell" style="margin-left: 10px;"></i>لا تفوت أي نشاط!
+            </h2>
+            <p style="color: var(--text-muted); margin-bottom: 25px;">سجل في منصة مكسبو لتصلك إشعارات بالأنشطة
+                والفعاليات القادمة</p>
+            <a href="register.html" class="btn btn-primary"><i class="fas fa-user-plus"
+                    style="margin-left: 8px;"></i>سجل الآن</a>
         </div>
     </section>
 
     <footer>
         <div class="container">
-            <p>2025 | جميع الحقوق محفوظة لفريق مكسبو التقني</p>
+            <img src="logo.png" alt="Makespo Logo" style="height: 60px; margin-bottom: 20px;">
+            <p style="color: var(--text-muted); max-width: 500px; margin: 0 auto 20px;">مكسبو هي المنصة الرائدة في اليمن
+                لرعاية المبتكرين.</p>
+            <div class="footer-links">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <p style="font-size: 0.9rem; color: var(--text-muted);">2025 | جميع الحقوق محفوظة لفريق مكسبو التقني</p>
         </div>
     </footer>
     <script src="script.js"></script>

@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مكسبو | سوق الابتكار</title>
+    <meta name="description"
+        content="سوق الابتكار من مكسبو - منصة لعرض الأفكار والمشاريع المبتكرة وربط المبتكرين بالمستثمرين والشركاء">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <nav class="navbar glass">
+        <!-- Mobile Controls -->
+        <div class="mobile-controls">
+            <button class="theme-toggle" id="theme-toggle" aria-label="تبديل الوضع">
+                <span class="stars"></span>
+                <span class="moon-craters"></span>
+            </button>
+            <div class="menu-toggle" id="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+
+        <a href="index.html" class="nav-brand">
+            <img src="logo.png" alt="Makespo Logo">
+            <span>مكسبو</span>
+        </a>
+
+        <ul class="nav-links">
+            <li><a href="index.html" class="nav-link">الرئيسية</a></li>
+            <li><a href="about.html" class="nav-link">عن مكسبو</a></li>
+            <li><a href="programs.html" class="nav-link">البرامج</a></li>
+            <li><a href="activities.html" class="nav-link">الأنشطة</a></li>
+            <li><a href="challenges.html" class="nav-link">التحديات</a></li>
+            <li><a href="exhibitions.html" class="nav-link">معارض الابتكار</a></li>
+            <li class="dropdown">
+                <a href="#" class="nav-link" style="color:var(--primary-color);">المزيد <i class="fas fa-chevron-down"
+                        style="font-size: 0.8rem;"></i></a>
+                <div class="dropdown-content glass">
+                    <a href="market.html" class="dropdown-item" style="color:var(--primary-color);"><i
+                            class="fas fa-store"></i> سوق الابتكار</a>
+                    <a href="opportunities.html" class="dropdown-item"><i class="fas fa-door-open"></i> الفرص</a>
+                    <a href="community.html" class="dropdown-item"><i class="fas fa-users"></i> المجتمع</a>
+                    <a href="content.html" class="dropdown-item"><i class="fas fa-newspaper"></i> المحتوى</a>
+                    <a href="partners.html" class="dropdown-item"><i class="fas fa-handshake"></i> الشركاء</a>
+                </div>
+            </li>
+            <li><a href="contact.html" class="nav-link">تواصل معنا</a></li>
+        </ul>
+
+        <div class="nav-auth">
+            <a href="login.html" class="btn btn-ghost">تسجيل الدخول</a>
+            <a href="register.html" class="btn btn-primary">إنشاء حساب</a>
+            <button class="theme-toggle" id="theme-toggle-desktop" aria-label="تبديل الوضع">
+                <span class="stars"></span>
+                <span class="moon-craters"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu" id="mobile-menu-overlay">
+        <div class="sheet">
+            <a href="index.html">الرئيسية</a>
+            <a href="about.html">عن مكسبو</a>
+            <a href="programs.html">البرامج</a>
+            <a href="activities.html">الأنشطة</a>
+            <a href="challenges.html">التحديات</a>
+            <a href="exhibitions.html">معارض الابتكار</a>
+            <a href="market.html">سوق الابتكار</a>
+            <a href="opportunities.html">الفرص</a>
+            <a href="community.html">المجتمع</a>
+            <a href="content.html">المحتوى</a>
+            <a href="partners.html">الشركاء</a>
+            <a href="contact.html">تواصل معنا</a>
+            <div class="mobile-auth">
+                <a href="login.html" class="btn btn-ghost">تسجيل الدخول</a>
+                <a href="register.html" class="btn btn-primary">إنشاء حساب</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="section container">
+        <div class="glass" style="padding: 60px 40px; text-align: center; margin-bottom: 50px;">
+            <h1 class="section-title" style="margin-bottom: 20px;">
+                <i class="fas fa-store" style="margin-left: 15px; color: var(--primary-color);"></i>
+                سوق الابتكار
+            </h1>
+            <p style="font-size: 1.2rem; color: var(--text-muted); max-width: 700px; margin: 0 auto;">
+                منصة لعرض الأفكار والمشاريع المبتكرة القابلة للتطوير والاستثمار.
+                نربط المبتكرين بالشركاء والمستثمرين لتحويل الأفكار إلى واقع.
+            </p>
+        </div>
+
+        <!-- Filter Categories -->
+        <div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; margin-bottom: 40px;">
+            <button class="btn btn-primary" style="padding: 10px 25px;">الكل</button>
+            <button class="btn btn-ghost" style="padding: 10px 25px;">تقنية</button>
+            <button class="btn btn-ghost" style="padding: 10px 25px;">صحة</button>
+            <button class="btn btn-ghost" style="padding: 10px 25px;">تعليم</button>
+            <button class="btn btn-ghost" style="padding: 10px 25px;">زراعة</button>
+            <button class="btn btn-ghost" style="padding: 10px 25px;">طاقة</button>
+            <button class="btn btn-ghost" style="padding: 10px 25px;">خدمات</button>
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="grid">
+            <!-- Project 1 -->
+            <div class="card glass">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;">
+                    <span
+                        style="background: rgba(31, 165, 158, 0.15); color: var(--primary-color); padding: 5px 15px; border-radius: 20px; font-size: 0.85rem;">
+                        تقنية
+                    </span>
+                    <span
+                        style="background: #28a745; color: white; padding: 5px 15px; border-radius: 20px; font-size: 0.85rem;">
+                        متاح للاستثمار
+                    </span>
+                </div>
+                <h2 style="margin-bottom: 10px;">منصة التوظيف الذكي</h2>
+                <p>منصة تستخدم الذكاء الاصطناعي لربط الباحثين عن عمل بالفرص المناسبة لمهاراتهم وخبراتهم.</p>
+                <div style="margin-top: 20px; padding-top: 15px; border-top: 1px solid var(--glass-border);">
+                    <div style="display: flex; justify-content: space-between; align-items: center;">
+                        <span style="color: var(--text-muted); font-size: 0.9rem;">
+                            <i class="fas fa-user" style="margin-left: 5px;"></i> أحمد محمد
+                        </span>
+                        <a href="contact.html" class="btn btn-ghost" style="padding: 8px 15px; font-size: 0.9rem;">
+                            تواصل
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="card glass">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;">
+                    <span
+                        style="background: rgba(31, 165, 158, 0.15); color: var(--primary-color); padding: 5px 15px; border-radius: 20px; font-size: 0.85rem;">
+                        صحة
+                    </span>
+                    <span
+                        style="background: #ffc107; color: #333; padding: 5px 15px; border-radius: 20px; font-size: 0.85rem;">
+                        يبحث عن شريك
+                    </span>
+                </div>
+                <h2 style="margin-bottom: 10px;">تطبيق الاستشارات الطبية</h2>
+                <p>تطبيق يربط المرضى بالأطباء للحصول على استشارات طبية عن بُعد بجودة عالية وتكلفة معقولة.</p>
+                <div style="margin-top: 20px; padding-top: 15px; border-top: 1px solid var(--glass-border);">
+                    <div style="display: flex; justify-content: space-between; align-items: center;">
+                        <span style="color: var(--text-muted); font-size: 0.9rem;">
+                            <i class="fas fa-user" style="margin-left: 5px;"></i> سارة علي
+                        </span>
+                        <a href="contact.html" class="btn btn-ghost" style="padding: 8px 15px; font-size: 0.9rem;">
+                            تواصل
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="card glass">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;">
+                    <span
+                        style="background: rgba(31, 165, 158, 0.15); color: var(--primary-color); padding: 5px 15px; border-radius: 20px; font-size: 0.85rem;">
+                        زراعة
+                    </span>
+                    <span
+                        style="background: #28a745; color: white; padding: 5px 15px; border-radius: 20px; font-size: 0.85rem;">
+                        متاح للاستثمار
+                    </span>
+                </div>
+                <h2 style="margin-bottom: 10px;">نظام الري الذكي</h2>
+                <p>نظام آلي للري يستخدم حساسات لقياس رطوبة التربة ويوفر المياه ويزيد الإنتاجية الزراعية.</p>
+                <div style="margin-top: 20px; padding-top: 15px; border-top: 1px solid var(--glass-border);">
+                    <div style="display: flex; justify-content: space-between; align-items: center;">
+                        <span style="color: var(--text-muted); font-size: 0.9rem;">
+                            <i class="fas fa-user" style="margin-left: 5px;"></i> محمد عبدالله
+                        </span>
+                        <a href="contact.html" class="btn btn-ghost" style="padding: 8px 15px; font-size: 0.9rem;">
+                            تواصل
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 4 -->
+            <div class="card glass">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;">
+                    <span
+                        style="background: rgba(31, 165, 158, 0.15); color: var(--primary-color); padding: 5px 15px; border-radius: 20px; font-size: 0.85rem;">
+                        تعليم
+                    </span>
+                    <span
+                        style="background: #17a2b8; color: white; padding: 5px 15px; border-radius: 20px; font-size: 0.85rem;">
+                        قيد التطوير
+                    </span>
+                </div>
+                <h2 style="margin-bottom: 10px;">منصة التعلم التفاعلي</h2>
+                <p>منصة تعليمية تفاعلية تستخدم الألعاب والتحديات لتعليم الأطفال البرمجة والمهارات الرقمية.</p>
+                <div style="margin-top: 20px; padding-top: 15px; border-top: 1px solid var(--glass-border);">
+                    <div style="display: flex; justify-content: space-between; align-items: center;">
+                        <span style="color: var(--text-muted); font-size: 0.9rem;">
+                            <i class="fas fa-user" style="margin-left: 5px;"></i> فاطمة أحمد
+                        </span>
+                        <a href="contact.html" class="btn btn-ghost" style="padding: 8px 15px; font-size: 0.9rem;">
+                            تواصل
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 5 -->
+            <div class="card glass">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;">
+                    <span
+                        style="background: rgba(31, 165, 158, 0.15); color: var(--primary-color); padding: 5px 15px; border-radius: 20px; font-size: 0.85rem;">
+                        طاقة
+                    </span>
+                    <span
+                        style="background: #28a745; color: white; padding: 5px 15px; border-radius: 20px; font-size: 0.85rem;">
+                        متاح للاستثمار
+                    </span>
+                </div>
+                <h2 style="margin-bottom: 10px;">محطات الشحن الشمسية</h2>
+                <p>محطات متنقلة تعمل بالطاقة الشمسية لشحن الأجهزة الإلكترونية في المناطق النائية.</p>
+                <div style="margin-top: 20px; padding-top: 15px; border-top: 1px solid var(--glass-border);">
+                    <div style="display: flex; justify-content: space-between; align-items: center;">
+                        <span style="color: var(--text-muted); font-size: 0.9rem;">
+                            <i class="fas fa-user" style="margin-left: 5px;"></i> عمر حسن
+                        </span>
+                        <a href="contact.html" class="btn btn-ghost" style="padding: 8px 15px; font-size: 0.9rem;">
+                            تواصل
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 6 -->
+            <div class="card glass">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;">
+                    <span
+                        style="background: rgba(31, 165, 158, 0.15); color: var(--primary-color); padding: 5px 15px; border-radius: 20px; font-size: 0.85rem;">
+                        خدمات
+                    </span>
+                    <span
+                        style="background: #ffc107; color: #333; padding: 5px 15px; border-radius: 20px; font-size: 0.85rem;">
+                        يبحث عن شريك
+                    </span>
+                </div>
+                <h2 style="margin-bottom: 10px;">تطبيق توصيل المنتجات المحلية</h2>
+                <p>تطبيق يربط المنتجين المحليين بالمستهلكين مباشرة، لدعم الاقتصاد المحلي وتوفير منتجات طازجة.</p>
+                <div style="margin-top: 20px; padding-top: 15px; border-top: 1px solid var(--glass-border);">
+                    <div style="display: flex; justify-content: space-between; align-items: center;">
+                        <span style="color: var(--text-muted); font-size: 0.9rem;">
+                            <i class="fas fa-user" style="margin-left: 5px;"></i> ياسر محمد
+                        </span>
+                        <a href="contact.html" class="btn btn-ghost" style="padding: 8px 15px; font-size: 0.9rem;">
+                            تواصل
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- CTA for Innovators -->
+        <div class="glass" style="padding: 50px 40px; text-align: center; margin-top: 60px;">
+            <h2 style="color: var(--primary-color); margin-bottom: 15px;">
+                <i class="fas fa-rocket" style="margin-left: 10px;"></i>
+                لديك مشروع مبتكر؟
+            </h2>
+            <p
+                style="color: var(--text-muted); margin-bottom: 25px; max-width: 500px; margin-left: auto; margin-right: auto;">
+                اعرض مشروعك في سوق الابتكار واحصل على فرصة للتواصل مع المستثمرين والشركاء المحتملين
+            </p>
+            <div style="display: flex; gap: 15px; justify-content: center; flex-wrap: wrap;">
+                <a href="register.html" class="btn btn-primary">
+                    <i class="fas fa-plus" style="margin-left: 8px;"></i>أضف مشروعك
+                </a>
+                <a href="contact.html" class="btn btn-ghost">
+                    <i class="fas fa-question-circle" style="margin-left: 8px;"></i>استفسر أكثر
+                </a>
+            </div>
+        </div>
+
+        <!-- CTA for Investors -->
+        <div class="glass"
+            style="padding: 50px 40px; text-align: center; margin-top: 30px; background: linear-gradient(135deg, rgba(31, 165, 158, 0.1), rgba(31, 165, 158, 0.05));">
+            <h2 style="color: var(--primary-color); margin-bottom: 15px;">
+                <i class="fas fa-chart-pie" style="margin-left: 10px;"></i>
+                هل أنت مستثمر؟
+            </h2>
+            <p
+                style="color: var(--text-muted); margin-bottom: 25px; max-width: 500px; margin-left: auto; margin-right: auto;">
+                اكتشف فرص استثمارية واعدة في مشاريع مبتكرة تبحث عن التمويل والدعم
+            </p>
+            <a href="contact.html" class="btn btn-primary">
+                <i class="fas fa-handshake" style="margin-left: 8px;"></i>تواصل معنا
+            </a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <img src="logo.png" alt="Makespo Logo" style="height: 60px; margin-bottom: 20px;">
+            <p style="color: var(--text-muted); max-width: 500px; margin: 0 auto 20px;">مكسبو هي المنصة الرائدة في اليمن
+                لرعاية المبتكرين وتنظيم الفعاليات الإبداعية.</p>
+            <div class="footer-links">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <p style="font-size: 0.9rem; color: var(--text-muted);">2025 | جميع الحقوق محفوظة لفريق مكسبو التقني</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
